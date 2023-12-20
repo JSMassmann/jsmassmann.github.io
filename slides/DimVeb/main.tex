@@ -1,0 +1,582 @@
+\documentclass{beamer}
+%Information to be included in the title page:
+\title{Ordinal notations up to $\eta_0$}
+\author{Jayde S. Massmann}
+\date{\today \\ (Joint work with Adrian W. Kwon)}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\usepackage{tikz}
+\usetheme{Copenhagen}
+\usecolortheme{default}
+
+\usepackage{parskip}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Ordinals}
+The ordinals are a discrete counting system, which extend the natural numbers with infinite quantities.
+
+\pause
+
+After the usual $0, 1, 2, \cdots$ there come $\omega, \omega+1, \cdots$, then $\omega 2, \omega 2 + 1, \cdots$, $\omega 3, \omega 3 + 1, \cdots$, $\omega 4, \cdots$ and then $\omega^2$. \pause They continue into eternity, passing $\omega^\omega$ along the way.
+
+\pause
+
+Ordinals are important in set theory, as they can be used to label the ``lengths'', or \alert{order types}, of well-ordered sets. \pause  Well-ordered sets are rigid, discrete order structures - the natural numbers are an example, while the integers or rationals are not - because they have infinite descending chains.
+\end{frame}
+
+\begin{frame}
+\frametitle{Well-orders}
+For example, the natural numbers $\mathbb{N}$ have order type $\omega$, while reordering the natural numbers to put $0$ last yields a new set with order type $\omega + 1$.
+
+\pause
+
+As long as the structure is well-ordered, one is able to match it up one-to-one with an ordinal: one assigns the minimal element to $0$, the direct successor of an element to that element's ordinal, plus $1$, and limit points to suprema.
+\end{frame}
+
+\begin{frame}
+\frametitle{Countability}
+One key aspect of the first section of the infinite ordinals is that they are all still \alert{countable} - for example, you can pair up the ordinals below $\omega$ with the ordinals below $\omega 2$, without missing any. 
+
+\pause
+
+Namely, by setting $\mathsf{f}(2k) = k$ and $\mathsf{f}(2k+1) = \omega + k$, $\mathsf{f}$ is a bijection - a one-to-one pairing - between $\omega$ and $\omega 2$. Therefore, these ordinals can be taken to have the same size, despite the latter ``coming after'' the former.
+
+\pause
+
+Any ordinal which has the same size as $\omega$ is countable - $\omega$, $\omega 2$, $\omega^2$, $\omega^\omega$ and so on all are. But naturally, there are uncountable sets, and this will be proven on the next slide. The least such is denoted $\omega_1$ or $\Omega$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Cantor's diagonal argument}
+\begin{block}{Theorem (Cantor)}
+The powerset of the natural numbers, $\mathcal{P}(\mathbb{N})$, is not countable.
+\end{block}
+
+\pause
+
+This is proven by assuming there is a surjection $\mathsf{f}: \mathbb{N} \to \mathcal{P}(\mathbb{N})$, and then showing that the set $\{x \in \mathbb{N}: x \notin \mathsf{f}(x)\}$ can't be in the range of $\mathsf{f}$, since $\mathsf{f}(m) = \{x \in \mathbb{N}: x \notin \mathsf{f}(x)\}$ implies $m \in \mathsf{f}(m)$ iff $m \notin \mathsf{f}(m)$. This is a contradiction. \pause Thus, such an $m$ can't exist - this contradicts surjectivity, so we are done.
+
+Since the axiom of choice implies every set can be well-ordered, there must be some ordinal corresponding to the order type of $\mathcal{P}(\mathbb{N})$ - this ordinal must be uncountable. However, it may not be equal to the \textit{least} uncountable ordinal.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Veblen functions}
+One of our key goals is to be able to describe increasingly large countable ordinals. The first such method was given by Veblen: say that an ordinal function $f$ is \alert{normal} iff it is increasing ($\alpha < \beta$ implies $f(\alpha) < f(\beta)$) and continuous in the order topology (equivalently, for any set $X$ of ordinals, $f(\sup X) = \sup f''X$).
+
+\pause
+
+Normal functions are exact generalizations of monotonic, continuous maps $\mathbb{R} \to \mathbb{R}$, making them ``nice''. For example, for each $\alpha$, the map $\beta \mapsto \alpha+\beta$ is normal. N.b. that ordinal arithmetic is not in general commutative, so $\beta \mapsto \beta+\alpha$ is never normal.
+
+\pause
+
+\begin{block}{Theorem (Veblen)}
+Every normal function has arbitrarily large fixed points, and the function enumerating them is itself normal.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof of the fixed point lemma}
+
+To show this, let $\alpha$ be any ordinal, and construct the sequence $\langle \alpha_i: i < \omega \rangle$ by $\alpha_0 = \alpha$, and $\alpha_{i + 1} = f(\alpha_i)$. \pause Let $\beta = \sup\{\alpha_i: i < \omega\}$. Then, exploiting normality:
+
+\begin{equation}
+\begin{split}
+f(\beta) & = f(\sup\{\alpha_i: i < \omega\}) \\ & = \sup\{f(\alpha_i): i < \omega\} \\ & = \sup\{\alpha_{i+1}: i < \omega\} \\ & = \beta
+\end{split}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof of the fixed point lemma}
+
+Therefore, $\beta$ is a fixed point of $f$ greater than or equal to $\alpha$. Let $f'$ be the function enumerating the fixed points of $f$. \pause Showing that $f'$ is increasing is obvious, showing it is continuous follows from the fact that, for any limit ordinal $\delta$, if $\delta' = \sup\{f'(\gamma): \gamma < \delta\}$:
+
+\begin{equation}
+\begin{split}
+f(\delta') & = f(\sup\{f'(\gamma): \gamma < \delta\}) \\ & = \sup\{f(f'(\gamma)): \gamma < \delta\} \\ & = \sup\{f'(\gamma): \gamma < \delta\} \\ & = \delta'
+\end{split}
+\end{equation}
+
+and so $f'(\delta) = \delta'$.
+\end{frame}
+
+\section{Variants of The Veblen Hierarchy}
+
+\begin{frame}
+\frametitle{The Veblen hierarchy}
+
+This allows us to build a hierarchy of functions generating large countable ordinals, via iterated fixed points. Let $\beta \mapsto \varphi(0,\beta)$ be some base normal function, such as $\varphi(0,\alpha) = \omega^\alpha$. \pause Let $\gamma \mapsto \varphi(\beta+1,\gamma)$ enumerate the fixed points of $\varphi(\beta,\gamma)$. \pause When $\beta$ is a limit ordinal, let $\gamma \mapsto \varphi(\beta,\gamma)$ enumerate simultaneous fixed points of $\gamma \mapsto \varphi(\delta,\gamma)$ for $\delta < \beta$, which is also well-defined since the intersection of clubs is club. This is the Veblen hierarchy.
+
+\pause
+
+For example, $\varphi(1,\alpha)$ generates ordinals $\beta$ so that $\omega^\beta = \beta$, and $\varphi(2,\alpha)$ generates ordinals $\beta$ so that $\beta$ is the $\beta$th solution to the previous equation. One can then let $\varphi(1,0,\alpha)$ enumerate fixed points of $\beta \mapsto \varphi(\beta, 0)$, and so on. We can extend this to more and more, even transfinitely many, variables.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Large Veblen Ordinal}
+However, this system must stop somewhere, and this is the large Veblen ordinal $E_0$. This is the least $\alpha$ so that $\varphi(1@\alpha) = \alpha$, where $1@\alpha$ denotes a one, followed by $\alpha$ many zeroes. This is guaranteed to exist, as the map $\beta \mapsto \varphi(1@\beta)$ is normal.
+
+\pause
+
+So the question is:
+
+\begin{block}{Question}
+How does one describe ordinals beyond $E_0$ in an efficient, novel way?
+\end{block}
+
+\pause
+
+The primary methods used in the literature are \alert{ordinal collapsing functions}. And the natural limit of the simplest ordinal collapsing functions is the Bachmann-Howard ordinal.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Bachmann-Howard ordinal}
+The Bachmann-Howard ordinal, often denoted $\eta_0$, is an important large, countable ordinal. It was originally defined by H. Bachmann as the limit of his extension of Veblen's ordinal functions.
+
+\pause
+
+These systematically used \alert{uncountable} ordinals to keep track of the levels of diagonalization happening at the countable level, in a sense imbuing impredicativity into the definition. For example, $\Gamma_0 = \varphi(1,0,0)$ would be denoted $\varphi_\Omega(0)$, the small Veblen ordinal $\varphi(1@\omega)$ would be denoted $\varphi_{\Omega^\omega}(0)$, and $E_0$ would be $\varphi_{\Omega^\Omega}(0)$.
+
+\pause
+
+His system used a set of fundamental sequences for uncountable ordinals, making the definition very complicated. It was later ``recast'' by M. Rathjen, using Skolem hulls of sets of ordinals.
+\end{frame}
+
+\begin{frame}
+\frametitle{Predicativity and Inductive Systems}
+The Bachmann-Howard ordinal is also important proof-theoretically: it was shown by Jäger to be equal to the supremum of order-types of countable sets, the well-orderedness of which was provable in Kripke-Platek set theory. This is a ``predicative'' or ``recursive'' analogue of Zermelo-Fraenkel set theory.
+
+\pause
+
+The above also holds if one replaces Kripke-Platek set theory with $\mathsf{ID}_1$, Peano arithmetic augmented by axioms allowing for non-iterated inductive definitions.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Big Question}
+Therefore, we should make our previous question more precise:
+
+\begin{block}{Question}
+How does one develop an effective system of ordinal notations between $E_0$ and $\eta_0$, without impredicative means, capable of describing strong inductive principles provable in Kripke-Platek set theory or $\mathsf{ID}_1$?
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Iterate more!}
+Schütte created a system of \textit{Klammersymbolen}, which represented an alternative way of writing ordinals below $E_0$ via 2-dimensional arrays (it was functionally, but not aesthetically, identical to Veblen's original system). \pause A string of $\alpha$ zeroes is represented as an $\alpha$ in the second row. For example:
+
+\begin{equation}
+\begin{split}
+\varphi\left(\begin{matrix} 1 \\ 0\end{matrix}\right) & = \omega \\ \varphi\left(\begin{matrix} 1 \\ 1\end{matrix}\right) & = \varphi(1,0) \\ \varphi\left(\begin{matrix} 1 \\ 2\end{matrix}\right) & = \varphi(1,0,0)
+\end{split}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Klammersymbolen}
+With multiple nonzero arguments, the second row may be imagined more as ``positioning'' than as an amount of trailing zeroes. Namely, the second row represents the zero-indexed position, counted from the right. \pause For example, $\varphi(\alpha,\beta)$ would be written as
+
+\begin{equation}
+\varphi\left(\begin{matrix} \alpha & \beta \\ 1 & 0\end{matrix}\right)
+\end{equation}
+
+\pause
+
+However, with transfinitely many entries, we still require finite support (finitely many nonzero entries on the top row). This allows us to write any ordinal below $E_0$ in terms of an $n \times 2$ matrix of ordinals, where $n < \omega$.
+\end{frame}
+
+\begin{frame}
+\frametitle{General matrices}
+Of course, the entries in this matrix can be taken to be less than the ordinal being represented, as else it would be completely useless. One can then, naturally, represent further ordinals via $n \times m$ matrices, for $2 < m < \omega$. For example:
+
+\begin{equation}
+\varphi\left(\begin{matrix} 1 \\ 0 \\ 1\end{matrix}\right) = E_0
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{General matrices}
+This is done by making
+
+\begin{equation}
+\varphi\left(\begin{matrix} \alpha+1 \\ A\end{matrix}\right)
+\end{equation}
+
+become the first fixed point of
+
+\begin{equation}
+\beta\ \mapsto \varphi\left(\begin{matrix} \alpha & 1 \\ A & A[\beta]\end{matrix}\right)
+\end{equation}
+
+where $A[\beta]$ is the substitution of the entry before the first non-zero one in $A$ with $\beta$, and the decrementing of the first nonzero entry.
+\end{frame}
+
+\begin{frame}
+\frametitle{Multiple dimensions}
+This is only done if the first entry of $A$ is $0$, otherwise it is done in accordance with rules for sub-$E_0$ Klammersymbolen. Unfortunately, this can only get us so far - our current approach reaches a limit of $\varphi_{\Omega^{\Omega^\omega}}(0) \ll \eta_0$. Therefore, we introduce a notation known as \alert{dimensional Veblen}.
+
+\pause
+
+Technically, dimensional Veblen is a behemoth - showing that impredicative approaches may be more effective than predicative ones for sheer simplicity. However, dimensional Veblen also possesses very intuitive behaviour since, at the core, the idea is very simple. We will touch on this right before we define it.
+\end{frame}
+
+\section{Dimensional Veblen}
+
+\begin{frame}
+\frametitle{The idea}
+We use a different approach to our system that we just mentioned. Notice  that, previously, $(1,0)$ has acted as an indicator of taking fixed points - for example, $\varphi(1,0,0)$ is a fixed point of $\alpha \mapsto \varphi(\alpha,0)$, etc. \pause Thus, we may be able to write $E_0$, the least fixed point of
+
+\begin{equation}
+\alpha \mapsto \varphi\left(\begin{matrix} 1 \\ \alpha \end{matrix}\right)
+\end{equation}
+
+as 
+
+\begin{equation}
+\varphi\left(\begin{matrix} 1 \\ (1,0) \end{matrix}\right)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Multi-dimensional arrays}
+Say a relation $R$ is injective if $(x,y) \in R$ and $(z,w) \in R$ implies either $x = z$ or $y \neq w$. When considering a map $f$ as its graph $xR_fy$ iff $f(x) = y$, as is usually done, $f$ is injective iff its graph is. Now we define a set $A$ inductively like so:
+
+\pause
+
+\begin{block}{Definition}
+Define $A_0 = \{\emptyset\}$ and let $A_{n+1}$ be the set of injective relations on $\mathsf{Ord} \times A_n$ whose domain is nonempty yet finite, and does not contain zero. \pause $\langle B_n: n < \omega \rangle$ is defined completely analogously, but omitting the requirement ``and does not contain zero''.
+\end{block}
+
+\pause
+
+Note that elements of $A_{n+1}$ won't be homogeneous relations, as $\mathsf{Ord}$ and $A_n$ aren't equal.
+\end{frame}
+
+\begin{frame}
+\frametitle{Multi-dimensional arrays}
+As evident from the title of this slide, $A$ is intended to provide a way to formally define an extension of the Klammersymbolen. For each $n < \omega$, there is a canonical embedding of the subset of $\mathsf{Mat}(n \times 2, \mathsf{Ord})$, where terms on the bottom row are not repeated, into $A_2$. \pause Namely, it is $\pi$ defined as
+
+\begin{equation}
+\pi\left(\begin{matrix} \alpha_1 & \alpha_2 & \cdots & \alpha_n \\ \beta_1 & \beta_2 & \cdots & \beta_n\end{matrix}\right) = \{(\alpha_1,\underline{\beta_1}), (\alpha_2,\underline{\beta_2}), \cdots, (\alpha_n,\underline{\beta_n})\}
+\end{equation}
+
+where $\underline{\alpha} = \{(\alpha,\emptyset)\}$ for $\alpha > 0$ and $\underline{0} = \emptyset$. \pause Injectiveness of $\pi$'s output, which ensures they are in fact elements of $A_2$, corresponds to $\beta_i \neq \beta_j$ for $i \neq j$, i.e. non-repetition of terms on the bottom row.
+\end{frame}
+
+\begin{frame}
+\frametitle{Why ``dimensional''?}
+Since the map $\alpha \mapsto \underline{\alpha}$ is injective and its range is all of $A_1$, the map $\pi$ is also injective, and its range is all of $A_2$. Therefore, it is a bijection, and in fact could be considered an isomorphism when imbuing these matrices with some ``canonical'' structure.
+
+Now why is this system called \textit{dimensional} Veblen? Well, in the original formulation, the lower row was thought of as acting like co-ordinates. $\begin{pmatrix}1\\(1,0)\end{pmatrix}$ would then represent a 1 on the second row, and more generally a 
+\begin{equation}
+\left(\begin{matrix} \beta \\ (\cdots, \alpha_3, \alpha_2, \alpha_1, \alpha_0) \end{matrix}\right)
+\end{equation}
+would represent a $\beta$ on the $(1+\alpha_0)$th column of the $(1+\alpha_1)$th row of the ... and so on.
+\end{frame}
+
+\begin{frame}
+\frametitle{Let us define it!}
+This then involved multiple ``dimensions'' (entry, row, plane, ...,) and so was called dimensional Veblen. Now let us define it!
+
+Unfortunately, many auxiliaries are necessary... Let $A = \bigcup_{n < \omega} A_n$ and $B = \bigcup_{n < \omega} B_n$. Let $X \in A$. $a(X)$ denotes the range of $X$, i.e. the set of $X'$ with $(\alpha, X') \in X$ for some $\alpha$.
+
+We aim to define a relation $\prec$ on $A$, which will be crucial to comparison of terms in the ordinal representation system. Let us describe the behaviour of $\prec$ on $A_2$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Let us define it!}
+Essentially, $\prec$ works by first ensuring $\emptyset$ is a least and minimal element, and then comparing two nonempty elements of $A_2$ (which we represent by their attached matrices, i.e. $\pi$-preimages) via the following algorithm:
+
+\begin{itemize}
+    \item Let $\alpha_X$ and $\alpha_Y$ be the maximal ordinals used in the bottom rows of $X$ and $Y$, resp. If $\alpha_X \neq \alpha_Y$, then $X \prec Y$ iff $\alpha_X < \alpha_Y$.
+    \item Else, let $\rho_X$ and $\rho_Y$ be the ordinals on the top row, in the columns in $X$ and $Y$, whose bottom elements are $\alpha_X$ and $\alpha_Y$, resp. If $\rho_X \neq \rho_Y$, then $X \prec Y$ iff $\rho_X < \rho_Y$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Let us define it!}
+\begin{itemize}
+    \item Else, remove the columns $\left(\begin{matrix} \rho_X \\ \alpha_X \end{matrix}\right)$ and $\left(\begin{matrix} \rho_Y \\ \alpha_Y \end{matrix}\right)$ from $X$ and $Y$, resp, and compare the resulting, smaller matrices.
+\end{itemize}
+
+It's actually quite easy to see that this ordering is precisely the ordering on $A_2$, given by $X \prec Y$ iff $\pi^{-1}(X) <_{\mathrm{lex}} \pi^{-1}(Y)$. Here $<_{\mathrm{lex}}$ denotes the lexicographical ordering on $\mathsf{Mat}(n \times 2, \mathsf{Ord})$, where we represent each matrix as the sequence of its columns, and individual columns are compared themselves via the inverse lexicographical ordering on $\mathsf{Ord}^2$.
+\end{frame}
+
+\section{Defining Dimensional Veblen}
+
+\begin{frame}
+\frametitle{Some elementary properties}
+The general algorithm for comparing elements of $A$ is identical, although note that now $\alpha_X$ and $\alpha_Y$ may no longer be (elements of $A_1$ corresponding to) ordinals, so we'll need a recursive application of $\prec$ in case (1). $\alpha_X$ is now denoted $b(X)$. Dually to $b$, one also defines $\overline{b}$ as the $\prec$-smallest element of the bottom row, which will be used later. Also, for $X, Y \in A$, let $c_X(Y)$ be $X^{-1}(Y)$, if it exists, and $0$ else. Then $\rho_X = c_X(b(X))$. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Some elementary properties, cont.}
+Using induction on the rank of $X$ (the least $n$ so that $X \in A_n$), combined with some tedious bashing and case classification, one can verify:
+
+\begin{itemize}
+    \item $c$ is well-defined.
+    \item $b$ and $\overline{b}$ are well-defined.
+    \item For all $X \in A$, unless $X = \emptyset$, we always have $b(X) \prec X$.
+    \item $\prec$ is a strict linear order.
+    \item For all $X \in A$, unless $X = \emptyset$, we have $\overline{b}(X) \preceq b(X)$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Some more definitions}
+
+One also sees that $\alpha < \beta$ iff $\underline{\alpha} \prec \underline{\beta}$. This is because case (2) is always triggered, i.e. $b(\underline{\alpha}) = b(\underline{\beta})$ but $c_{\underline{\alpha}}(b(\underline{\alpha})) < c_{\underline{\beta}}(b(\underline{\beta}))$.
+
+\pause
+
+Define $d: B \to A$ as recursively erasing first-entry zeroes. In other words, $d(X) = \{(\alpha,d(X')): (\alpha,X') \in X \land \alpha \neq 0\}$. \pause Also, define $e: A \to A$ which decrements the position of $\emptyset$, if it is a successor ordinal. Once again, via formal notation, $e(X) = X$ if $c_X(\emptyset) \in \mathsf{Lim} \cup \{0\}$, and else $e(X) = d(X \setminus \{(c_X(\emptyset), \emptyset)\} \cup \{(\eta, \emptyset)\})$ where $\eta$ is the unique ordinal so that $\eta + 1 = c_X(\emptyset)$. It gets a lot more like a symbol soup here!
+\end{frame}
+
+\begin{frame}
+\frametitle{$f$, $g$ and $h$}
+$f$ is a function which acts as a case-classifier for evaluating our Veblen function. Namely, we have a distinction between \alert{nesting}-type behaviour:
+
+\begin{equation}
+\varphi(1,0) = \sup 0, \varphi(0,0), \varphi(0,\varphi(0,0)), \varphi(0,\varphi(0,\varphi(0,0))), \cdots
+\end{equation}
+
+and \alert{uniform expansion}-type behaviour:
+
+\begin{equation}
+\varphi(\omega,0) = \sup \varphi(0,0), \varphi(1,0), \varphi(2,0), \varphi(3,0), \cdots
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{$f$, $g$ and $h$}
+When computing $\varphi X$, we will have to permit either type of behaviour, and which one we use is $f(X)$, which is determined by the precise structure of $X$. There are also cases in which no expansion occurs, such as $\varphi(0,0)$ or $\varphi(0,\alpha+1)$, which correspond to two further cases.
+\end{frame}
+
+\begin{frame}
+\frametitle{$f$, $g$ and $h$}
+Let us give a definition. $f: A \to \mathsf{Ord}$ is a function defined by the following case classification:
+
+\begin{itemize}
+    \item If $X = \emptyset$, then $f(X) = 0$.
+    \item If $e(X) \neq X$ (equiv. $c_X(\emptyset)$ is a successor ordinal), then $f(X) = 1$.
+    \item Suppose $c_X(\overline{b}(X))$ is a successor:
+    \begin{enumerate}
+        \item If $e(\overline{b}(X)) \neq \overline{b}(X)$, then $f(X) = 2$.
+        \item Else, $f(X) = f(\overline{b}(X))$.
+    \end{enumerate}
+    \item Else, $f(X) = c_X(\overline{b}(X))$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{$f$, $g$ and $h$}
+A function $g: A \times \mathsf{Ord} \to A$ is also needed, in both types of behaviour, to establish how the array is being changed. One may imagine $g(A, \alpha)$ to mean ``$A$ but the active point has been replaced with $\alpha$'', so e.g. $g(\{(\omega, \underline{1})\}, \alpha) = \{(\alpha, \underline{1})\}$, which is how $\varphi(\omega, 0) = \sup\{\varphi(n, 0): n < \omega\}$ occurs. Let us give a definition of $g$, which is a similar style of case classification:
+\end{frame}
+
+\begin{frame}
+\frametitle{$f$, $g$, $h$ and $\varphi$}
+\begin{itemize}
+    \item If $X = \emptyset$, then $g(X, \alpha) = \emptyset$.
+    \item If $e(X) \neq X$, then $g(X, \alpha) = e(X)$.
+    \item Suppose $c_X(\overline{b}(X))$ is a successor. Let $\eta$ be the unique ordinal so that $\eta + 1 = c_X(\overline{b}(X))$:
+    \begin{enumerate}
+        \item If $e(\overline{b}(X)) \neq \overline{b}(X)$, then $g(X, \alpha) = d(X \setminus \{(c_X(\overline{b}(X)), \overline{b}(X))\} \cup \{(\eta, \overline{b}(X)), (\alpha, e(\overline{b}(X)))\})$.
+        \item Else, $g(X, \alpha) = d(X \setminus \{(c_X(\overline{b}(X)), \overline{b}(X))\} \cup \{(\eta, \overline{b}(X)), (1, g(\overline{b}(X), \alpha))\})$.
+    \end{enumerate}
+    \item Else, $g(X, \alpha) = d(X \setminus \{(c_X(\overline{b}(X)), \overline{b}(X))\} \cup \{(\alpha, \overline{b}(X))\})$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{$f$, $g$ and $h$}
+Now we need one last function, less relevant or complex than $f$ and $g$, namely $h: A \to A$ defined by: if $X = \emptyset$ then $h(X) = \emptyset$, if $\emptyset \in a(X)$ then $h(X) = X \setminus \{(c_X(\emptyset), \emptyset)\}$, and $h(X) = X$ else. \pause In other words, removing any element of $X$ with second component $\emptyset$. From the point of view of Klammersymbolen, this equates to removing any columns with bottom index $0$. For example, this is like the step down from $\varphi(\alpha, \beta)$ to $\varphi(\alpha, 0)$. $h$ is used because the last entry is not relevant to the ``diagonalization rank''.
+
+\pause
+
+It is easy to verify, and an interesting remark, that, for all $X \in A$ with $X \neq \emptyset$, and $\alpha < c_X(\overline{b}(X))$, we have $g(X, \alpha) \prec X$. This is sharp in basically all contexts, except for when $e(X) \neq X$, in which case $\alpha$ can be arbitrarily large.
+\end{frame}
+
+\begin{frame}
+\frametitle{The definition of $\varphi$!}
+Finally, all the auxiliary functions have been given. We are now able to define $\varphi: A \to \mathsf{Ord}$ like so: assume $X \in A$. If $X = \emptyset$, then $\varphi X = 1$. If $a(X) = \{\emptyset\}$, then $\varphi X = \omega^{c_X(\emptyset)}$. \pause Else, $\varphi X = \mathsf{enum}(U)(c_X(\emptyset))$, where:
+
+\begin{itemize}
+    \item If $f(h(X)) > 2$, then $U = \{\alpha: \forall 0 < \beta < f(h(X)) (\alpha = \varphi d(g(h(X), \beta) \cup \{(\alpha, \emptyset)\}))\}$.
+    \item If $f(h(X)) = 2$, then $U = \{\alpha: \alpha = \varphi g(h(X), \alpha)\}$.
+\end{itemize}
+
+\pause
+
+The first bullet point corresponds to the ``limit'' case, such as $\varphi(1, \omega, 0)$, in which one takes a simultaneous fixed point, which may also be expressed as a supremum of least fixed points. The second bullet point corresponds to a simpler ordinary fixed point case, such as $\varphi(1, 0, 0)$.
+\end{frame}
+
+\section{The Main Theorems}
+
+\begin{frame}
+\frametitle{Ordinal notations}
+It is possible to associate an ordinal notation to this $\varphi$. Recall an ordinal notation is a recursive set of natural numbers, which encode countable ordinals, with a recursive algorithm for comparing the ordinals which two terms represent. \pause Our comparison algorithm makes heavy usage of $\prec$, but one must also hereditarily compare the terms occuring inside arrays. This is like how $\varphi(1,0) < \varphi(0,\varphi(1,0)+1)$, despite $(0,\varphi(1,0)+1) <_{\mathrm{lex}} (1,0)$. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Conversions}
+Lastly, we want to find a way to convert ordinal collapsing functions from the literature, as well as the Klammersymbolen, to our new system. Our results are the following. Let $C_\nu$, for $\nu \leq \omega$, denote the Skolem hulls of sets of ordinals introduced by Buchholz, and $\psi_\nu$ denote the ordinal collapsing functions derived from these. Also, let $\Omega = \omega_1$, and let $\mathcal{J}$ denote the smallest ordinal above $\Omega$ satisfying $\omega^\mathcal{J} = \mathcal{J}$. Then:
+
+\begin{block}{Main Theorem (M., Kwon)}
+Assume $\alpha < \mathcal{J}$ and $\alpha \in C_0(\alpha)$. Then $\psi_0(\alpha) = \varphi V(t(\alpha))$, where $V: \mathcal{J} \to A$ and $t: \mathcal{J} \to \mathcal{J}$ are particular functions.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conversions}
+The ordinals $\alpha$ below $\mathcal{J}$ satisfying $\alpha \in C_0(\alpha)$ are cofinal, and include all ordinals below $\varphi(1,0)$ as well as $\Omega, \Omega^2, \Omega^\Omega$. Furthermore, if one considers the equivalence relation $\equiv$ given by $\alpha \equiv \beta$ iff $\psi_0(\alpha) = \psi_0(\beta)$, any equivalence class has a unique representative $\gamma$ satisfying $\gamma \in C_0(\gamma)$. It is also known that $\eta_0 = \psi_0(\mathcal{J})$, and $\psi_0$ is continuous for inputs of cofinality $\omega$. Lastly, any ordinal of the form $\omega^\alpha$ may be written as $\psi_0(\beta)$ for some $\beta$. \pause It follows from our Theorem, these observations and the Cantor Normal Form Theorem that:
+
+\begin{block}{Corollary (M., Kwon)}
+Any ordinal below $\eta_0$ may be expressed, uniquely, as a sum of finitely many outputs of $\varphi$.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conversions, cont.}
+Another conversion theorem concerns mainly ordinals below $E_0$.
+
+\begin{block}{Theorem (M., Kwon)}
+$\varphi$ precisely agrees with Klammersymbolen, and therefore Veblen's original system, below $E_0$. Namely, for any $n < \omega$ and $\alpha_0, \alpha_1, \cdots, \alpha_n, \beta_0, \beta_1, \cdots, \beta_n$, we have
+
+\begin{equation}
+\varphi \pi \left(\begin{matrix} \alpha_0 & \alpha_1 & \cdots & \alpha_n \\ \beta_0 & \beta_1 & \cdots & \beta_n \end{matrix}\right) = \varphi^* \left(\begin{matrix} \alpha_0 & \alpha_1 & \cdots & \alpha_n \\ \beta_0 & \beta_1 & \cdots & \beta_n \end{matrix}\right)
+\end{equation}
+
+where $\varphi^*$ denotes the Klammersymbolen.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Proving the theorems}
+Both involve, naturally, case classifications. This is due to the nature in which $\varphi$ is defined. For the sake of completeness, we shall include the definitions of the functions $V: \mathcal{J} \to A$ and $t: \mathcal{J} \to \mathcal{J}$ included in the Main Theorem. These, unfortunately, require numerous auxiliaries. \pause Let $s: \mathcal{J} \to [\mathcal{J}]^{< \omega}$ be defined by setting $s(\alpha)$ to be the full list of coefficients and exponents used in the base-$\Omega$ representation of $\alpha$. For example, if $\alpha < \Omega$ (i.e. $\alpha$ is countable) then $s(\alpha) = \{0,\alpha\}$ since $\alpha = \Omega^0 \alpha$. \pause Note that $s(\alpha)$ doesn't necessarily include $s(\beta)$ for all $\beta \in s(\alpha)$ - it's not a \alert{hereditary} representation.
+\end{frame}
+
+\begin{frame}
+\frametitle{Further auxiliaries}
+We also have a map $k: \mathcal{J}^2 \to \{-1,0,1\}$, which acts simply as a trichotomic case classification function. This allows us to define $t: \mathcal{J} \to \mathcal{J}$. \pause For ordinals $\alpha \geq \beta$, define $\alpha - \beta$ as the unique $\gamma$ so that $\beta + \gamma = \alpha$. Note that, e.g. $\omega - 1 = \omega$. \pause Then $t$ is computed like so: if $\alpha = 0$, then $t(\alpha) = 0$. Else suppose $\alpha > 0$. Let $\alpha = \xi + \Omega^\beta \gamma$ where $\gamma > 0$ and $\xi$ is a multiple of $\Omega^{\beta + 1}$. Set $\lambda = \psi_0(\xi) - 1$ and $u = k(\beta, \lambda)$. If $u = -1$, then $\rho = \lambda$; if $u = 0$, then $\rho = 1$; and if $u = 1$, then $\rho = 0$. Then $t(\alpha) = \Omega \beta + (\rho + \gamma - 1)$.
+
+\pause
+
+It can be checked that $t$ is injective. Lastly, $V: \mathcal{J} \to A$ is given by $V(0) = \emptyset$ and $V(\xi + \Omega^\beta \gamma) = V(\xi) \cup \{(\gamma, V(\beta))\}$, where $\gamma > 0$ and $\xi$ is a multiple of $\Omega^{\beta + 1}$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Examples}
+In other words, $V$ reads off the base-$\Omega$ Cantor normal form of an ordinal, converting coefficients and exponents into indices. We shall give a few examples of $t(\alpha)$ and $V(t(\alpha))$ for $\alpha < \mathcal{J}$, before giving a short sketch of the proofs of both our theorems.
+
+\begin{itemize}
+    \item $t(\Omega) = \Omega + (\rho + 1 - 1)$. \pause Since $\lambda = \psi_0(0) - 1 = 1 - 1 = 0$ and $u = k(1, 0) = 1$, it follows $\rho = 0$ and so $t(\Omega) = \Omega$. $V(t(\Omega)) = \{(1, V(1))\} = \{(1, \{(1, \emptyset)\})\}$.
+    \item $t(\Omega^2) = \Omega 2 + (\rho + 1 - 1)$. \pause Since $\lambda = \psi_0(0) - 1 = 1 - 1 = 0$ and $u = k(2, 0) = 1$, it follows $\rho = 0$ and so $t(\Omega^2) = \Omega 2$. $V(t(\Omega^2)) = \{(2, V(1))\} = \{(2, \{(1, \emptyset)\})\}$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof of the Main Theorem}
+\begin{itemize}
+    \item $t(\Omega^\Omega) = \Omega^2 + (\rho + 1 - 1)$. \pause Since $\lambda = \psi_0(0) - 1 = 1 - 1 = 0$ and $u = k(\Omega, 0) = 1$, it follows $\rho = 1$ and so $t(\Omega^\Omega) = \Omega^2$. $V(t(\Omega^\Omega)) = \{(1, V(2))\} = \{(1, \{(2, \emptyset)\})\}$.
+\end{itemize}
+
+And it is also the case that $\varphi V(t(\Omega)) = \varphi \{(1, \{(1,\emptyset)\})\} = \varphi \{(1, \underline{1})\} = \varphi(1,0)$ and $\psi_0(\Omega) = \varphi(1,0)$, so our main theorem holds there. Now let us give a proof that it \alert{always} holds.
+
+We do a transfinite induction. This may be split into 3 cases.
+
+In the zero case, $\alpha = 0$. We have $0 \in C_0(0)$. Then $V(t(0)) = \emptyset$ and $\varphi \emptyset = 1$. Meanwhile, $\psi_0(0) = 1$ as well, so the conclusion holds there.
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof of the Main Theorem - Successor Case}
+In the successor case, we further divide as to whether $\alpha$'s predecessor is a multiple of $\Omega$ or not. In the latter case, it further divides as to whether or not $\alpha$'s predecessor is countable or not. \pause
+
+\begin{itemize}
+    \item If $\alpha$'s predecessor is countable, then $\varphi V(t(\alpha)) = \omega^\alpha$ and $\psi_0(\alpha) = \omega^\alpha$. Note that one needs the hypothesis $\alpha \in C_0(\alpha)$ for $\psi_0(\alpha) = \omega^\alpha$, since $\psi_0(\varphi(1,0)+1) = \varphi(1,0)$.
+    \item In the other two cases, one obtains $\varphi V(t(\alpha)) = \varphi V(t(\alpha')) \omega$ and $\psi_0(\alpha) = \psi_0(\alpha') \omega$, where $\alpha'$ is the predecessor of $\alpha$, and so one applies the inductive hypothesis.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof of the Main Thorem - Limit Case Pt. 1}
+This is indubitably the most complex step. Firstly, one considers the case when $\alpha$ is a limit ordinal but not of the form $\omega^\beta$ for $\beta \leq \alpha$. If $\alpha$ is countable, one applies an identical argument to the case when $\alpha$ is the successor of a countable ordinal. \pause
+
+Else, we are able to write $\alpha$ as $\alpha_1 + \alpha_2$ where $\alpha_1 \geq \Omega$ and $\alpha_2 < \Omega$. If $\alpha_2 = 0$, then $\alpha$ is a multiple of $\Omega$, and so one performs lengthy calculations to write both $\varphi V(t(\alpha))$ and $\psi_0(\alpha)$ in terms of the original, 2-variable Veblen function, and one applies the inductive hypothesis.
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof of the Main Theorem - Limit Case Pt. 2}
+Else, $\alpha$ is of the form $\omega^\beta$ for $\beta \leq \alpha$. If $\alpha$ is countable, one once again applies an identical argument to the case when $\alpha$ is the successor of a countable ordinal. \pause
+
+When $\alpha$ is uncountable, one derives an explicit hereditary base-$\Omega$ Cantor normal form expression for $\alpha$, for which one may (according to certain hypotheses, such as that the rightmost coefficient is/isn't a limit ordinal) directly substitute in the definition of $\varphi$, and apply the inductive hypothesis to get an expression for $\psi_0(\alpha)$ of the same form. Then one utilizes various manipulations to get those two separate expressions to be one and the same. After exhausting all cases, the proofs is concluded.
+\end{frame}
+
+\begin{frame}
+\frametitle{Brief Sketch of the Proof of the Other Theorem}
+To wrap up, let us describe, once again in minimal detail, how to prove the correspondence between our $\varphi$ and the original system of Klammersymbolen. \pause
+
+We defined a slight variation of the original system, which once again has identical behaviour but is much easier to define. We then describe 7 classes of possible terms in this notation. Then we define something called a fundamental sequence.
+\end{frame}
+
+\begin{frame}
+\frametitle{Fundamental Sequences}
+\begin{block}{Definition}
+Assume $\tau$ is a limit ordinal with countable cofinality. A fundamental sequence for $\tau$ is an infinite sequence $\langle \tau[n]: n < \omega \rangle$ satisfying:
+
+\begin{itemize}
+    \item $\tau[n] \leq \tau[m]$ for $n \leq m$.
+    \item $\tau = \sup\{\tau[n]: n < \omega\}$
+\end{itemize}
+\end{block}
+
+One may consider fundamental sequences as witnesses to singularity. Assuming the axiom of choice, all countable limit ordinals have fundamental sequences, so in particular we constructively provide a ``system'' of fundamental sequences for limit ordinals below $E_0$. \pause It is straightforward to verify that these are, in fact, valid fundamental sequences.
+\end{frame}
+
+\begin{frame}
+\frametitle{Fundamental Sequence-Based Arguments}
+Then we can apply a converse of the proof technique we used to show Veblen's fixed point lemma - for any $\alpha$ and normal $f: \mathsf{Ord} \to \mathsf{Ord}$ with $f(\alpha) = \alpha$, the next fixed point above $\alpha$ is precisely the supremum of $f$-iterates of $\alpha+1$.
+
+Then, if we have, e.g. $\tau[n] = f^n(\alpha)$, one obtains that $\tau$ is the next fixed point of $f$ greater than or equal to $\alpha$, and so one may perform case classification via the 7 types of sub-$E_0$ limit ordinals to characterise the outputs of the traditional $\varphi$ in terms of fixed points and, thereby, our $\varphi$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Closing remarks}
+Our main conjecture is that the lower bound of $\eta_0$ for ordinals expressible via our extension of $\varphi$ is sharp. In particular, let $\mathcal{OT}$ denote the set of standard terms in our notation (so, e.g. terms representing $1 + \omega$ are not in $\mathcal{OT}$), and let $+_{\mathrm{NNF}}$ denote the restriction of the function on $\mathcal{OT}$ representing ordinal addition to inputs where the output is also in $\mathcal{OT}$. \pause Also, let $+_{\mathrm{ONF}}$ denote the restriction of actual ordinal addition to ordinals $\alpha, \beta < \eta_0$ where $\alpha$ is additively principal and $\alpha \geq \beta$. Then
+
+\begin{block}{Conjecture}
+There is an isomorphism $o: (\mathcal{OT}, \leq, +_{\mathrm{NNF}}) \longrightarrow (\eta_0, \leq, +_{\mathrm{ONF}})$.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Solving the conjecture}
+One could likely do this via another lengthy case classification, and discovering an algorithm for converting $\varphi$ back into $\psi$. It is unlikely that one could solve the conjecture without doing that. \pause If one makes the slightly weaker conjecture that $\varphi X < \eta_0$ whenever all ordinals occuring in $X$ are also $< \eta_0$, I have a vague mental idea for a potential alternate solution.
+\end{frame}
+
+\begin{frame}
+\frametitle{Thanks!}
+Thanks for attending!
+\end{frame}
+
+\end{document}
