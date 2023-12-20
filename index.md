@@ -19,3 +19,13 @@ I live in the UK and speak English fluently, and I used to speak German natively
 I have so far published 1 paper. I shall keep a repository of all my papers, as well as their LaTeX source code, on this website. I'm quite pedantic and consistent in spacing, etc. in LaTeX.
 
 - "Extending the Veblen Function" w/ A. Kwon
+
+# My talks
+
+I have not yet been invited to present any talks.
+
+I have prepared slides, in the event I do ever present talks, regarding some papers. They may be easier to understand.
+
+- "Ordinal Notations up by $\eta_0$", describing results of "Extending the Veblen Function"
+
+Once again, all slides shall be uploaded.
