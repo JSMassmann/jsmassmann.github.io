@@ -1,4 +1,9 @@
+<!-- MathJax, Bootstrap and jQuery CDNs -->
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 # Hiii!
 
@@ -32,12 +37,21 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   - [PDF](papers/DimVeb/Dimensional_Veblen.pdf)
   - [TEX](papers/DimVeb/main.tex)
   - [BIB](papers/DimVeb/main.bib)
+  - <button class="btn btn-primary" type="button" data-toggle="collapse data-target="#collapseAbstract1" aria-expanded="false" aria-controls="collapseAbstract1">
+    See abstract.
+  </button>
+
+  <div class="collapse" id="collapseAbstract1">
+  <div class="card card-body">
+    This paper serves to define an extension, which we call dimensional Veblen, of Oswald Veblen's system of ordinal functions below the large Veblen ordinal. This is facilitated by iterating derivatives of ordinal functions along multidimensional array structures, and can be viewed as the "maximal" natural extension of the Veblen functions. We then construct an ordinal notation based on it, and provide a conversion algorithm from Buchholz's function below the Bachmann-Howard ordinal.
+  </div>
+</div>
 
 I have not published any sets of notes regarding courses or particular topics.
 
 ## In preparation
 
-I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here, for reasons related to privacy and plagiarism, but I might as well make a list of their titles.
+I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles.
 
 - "Notes on Martin's Conjecture"
 - "A Simple Approach to Admissible Proof Theory"
