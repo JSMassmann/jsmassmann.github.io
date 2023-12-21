@@ -37,9 +37,7 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   - [PDF](papers/DimVeb/Dimensional_Veblen.pdf)
   - [TEX](papers/DimVeb/main.tex)
   - [BIB](papers/DimVeb/main.bib)
-  - <button class="btn btn-primary" type="button" data-toggle="collapse data-target="#collapseAbstract1" aria-expanded="false" aria-controls="collapseAbstract1">
-    See abstract.
-  </button>
+  - <a class="btn btn-primary" data-toggle="collapse" href="#collapseAbstract1" role="button" aria-expanded="false" aria-controls="collapseAbstract1">Show abstract.</a>
 
   <div class="collapse" id="collapseAbstract1">
   <div class="card card-body">
