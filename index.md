@@ -37,7 +37,7 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   - [PDF](papers/DimVeb/Dimensional_Veblen.pdf)
   - [TEX](papers/DimVeb/main.tex)
   - [BIB](papers/DimVeb/main.bib)
-  - <a data-toggle="collapse" href="#collapseAbstract1" role="button" aria-expanded="false" aria-controls="collapseAbstract1">Show abstract.</a>
+  - <a data-toggle="collapse" href="#collapseAbstract1" role="button" aria-expanded="false" aria-controls="collapseAbstract1">Abstract</a>
 
   <div class="collapse" id="collapseAbstract1">
 
@@ -57,9 +57,11 @@ I'm preparing a couple of research articles and preprints. Of course, I won't up
 - "A Beginner's Introduction to Set Theory"
 - "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom"
 - "A note on pseudo-ill-founded ordinal points"
+- "The Truth Lattice, Causation and Modal Logic"
+- "Polynomial regularities and tassels"
 - "Global theories of ordinals, stable ordinals and hyperuniversality"
 - "The inverse collapse iteration hypotheses and p.f-bad conjecture"
-- "Fundamental sequences up to omega-one of chess
+- "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
 - "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$"
 - "Maximal projection functions below the least uncountable cardinal"
 - "Elementary variants of large cardinals and reducibility"
