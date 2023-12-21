@@ -37,13 +37,14 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   - [PDF](papers/DimVeb/Dimensional_Veblen.pdf)
   - [TEX](papers/DimVeb/main.tex)
   - [BIB](papers/DimVeb/main.bib)
-  - <a class="btn btn-primary" data-toggle="collapse" href="#collapseAbstract1" role="button" aria-expanded="false" aria-controls="collapseAbstract1">Show abstract.</a>
+  - <a data-toggle="collapse" href="#collapseAbstract1" role="button" aria-expanded="false" aria-controls="collapseAbstract1">Show abstract.</a>
 
   <div class="collapse" id="collapseAbstract1">
+
   <div class="card card-body">
     This paper serves to define an extension, which we call dimensional Veblen, of Oswald Veblen's system of ordinal functions below the large Veblen ordinal. This is facilitated by iterating derivatives of ordinal functions along multidimensional array structures, and can be viewed as the "maximal" natural extension of the Veblen functions. We then construct an ordinal notation based on it, and provide a conversion algorithm from Buchholz's function below the Bachmann-Howard ordinal.
   </div>
-</div>
+  </div>
 
 I have not published any sets of notes regarding courses or particular topics.
 
