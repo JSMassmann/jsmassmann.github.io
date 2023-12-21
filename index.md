@@ -29,8 +29,9 @@ I have not yet been invited to present any talks.
 
 I have prepared slides, in the event I do ever present talks, regarding some papers. They may be easier to understand.
 
-- "Ordinal Notations up by $\eta_0$", describing results of "Extending the Veblen Function".
+- "Ordinal Notations up to $\eta_0$", describing results of "Extending the Veblen Function".
   - [PDF](slides/DimVeb/Slides.pdf)
+  - [Shortened PDF](slides/DimVeb/Slides%20(1).pdf)
   - [TEX](slides/DimVeb/main.tex)
 
-Once again, all slides shall be uploaded.
+Once again, all slides shall be uploaded. I also uploaded shortened versions, which omit pauses.
