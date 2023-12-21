@@ -47,11 +47,11 @@ I'm preparing a couple of research articles and preprints. Of course, I won't up
 - "Global theories of ordinals, stable ordinals and hyperuniversality"
 - "The inverse collapse iteration hypotheses and p.f-bad conjecture"
 - "Fundamental sequences up to omega-one of chess
-- "The paradigm of collapsification and natural ordinal representations beyond $\Pi^1_1 \textrm{-CA+BI}"
+- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$"
 - "Maximal projection functions below the least uncountable cardinal"
 - "Elementary variants of large cardinals and reducibility"
 - "Fine structure of recursive functional hierarchies"
-- "Expressive Complexity Theory and $< \omega$-Completeness Frameworks"
+- "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks"
 
 ## My talks
 
@@ -59,7 +59,7 @@ I have not yet been invited to present any talks.
 
 I have prepared slides, in the event I do ever present talks, regarding some papers. They may be easier to understand than those papers, which is one of the main reasons I'm uploading them here.
 
-- "Ordinal Notations up to $\eta_0$", describing results of "Extending the Veblen Function".
+- "Ordinal Notations up to $$\eta_0$$", describing results of "Extending the Veblen Function".
   - [PDF](slides/DimVeb/Slides.pdf)
   - [Shortened PDF](slides/DimVeb/Slides%20(1).pdf)
   - [TEX](slides/DimVeb/main.tex)
