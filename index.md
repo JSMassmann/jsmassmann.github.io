@@ -50,7 +50,7 @@ I have not published any sets of notes regarding courses or particular topics.
 
 ## In preparation
 
-I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles.
+I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles. For the sake of tidiness, I have sorted them in descending order in terms of how much I have written of them so far.
 
 - "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom"
 - "Polynomial regularities and tassels"
