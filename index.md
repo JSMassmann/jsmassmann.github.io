@@ -52,21 +52,22 @@ I have not published any sets of notes regarding courses or particular topics.
 
 I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles.
 
-- "Notes on Martin's Conjecture"
-- "A Simple Approach to Admissible Proof Theory"
-- "A Beginner's Introduction to Set Theory"
 - "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom"
-- "A note on pseudo-ill-founded ordinal points"
-- "The Truth Lattice, Causation and Modal Logic"
 - "Polynomial regularities and tassels"
-- "Global theories of ordinals, stable ordinals and hyperuniversality"
-- "The inverse collapse iteration hypotheses and p.f-bad conjecture"
-- "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
-- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$"
-- "Maximal projection functions below the least uncountable cardinal"
-- "Elementary variants of large cardinals and reducibility"
+- "A Beginner's Introduction to Set Theory"
 - "Fine structure of recursive functional hierarchies"
+- "Recursive Analogues of Shrewdness and Subtlety, with Applications to Fine Structure"
+- "The inverse collapse iteration hypotheses and p.f-bad conjecture"
+- "The Truth Lattice, Causation and Modal Logic"
+- "Notes on Martin's Conjecture"
+- "Elementary variants of large cardinals and reducibility"
+- "A Simple Approach to Admissible Proof Theory"
+- "A note on pseudo-ill-founded ordinal points"
+- "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
 - "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks"
+- "Maximal projection functions below $$\omega_1$$"
+- "Global theories of ordinals, stable ordinals and hyperuniversality"
+- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$"
 
 ## My talks
 
