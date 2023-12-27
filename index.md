@@ -44,9 +44,9 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   <div class="card card-body">
     This paper serves to define an extension, which we call dimensional Veblen, of Oswald Veblen's system of ordinal functions below the large Veblen ordinal. This is facilitated by iterating derivatives of ordinal functions along multidimensional array structures, and can be viewed as the "maximal" natural extension of the Veblen functions. We then construct an ordinal notation based on it, and provide a conversion algorithm from Buchholz's function below the Bachmann-Howard ordinal.
   </div>
+  </div>
 
   - ArXiV identifier: 2310.12832. The version available there also has minor typo fixes.
-  </div>
 
 - "Recursive Analogues of Shrewdness and Subtlety, with Applications to Fine Structure"
   - [PDF](papers/RecAnalogue/Recursive_Analogues_of_Shrewdness_and_Subtlety__with_Applications_to_Fine_Structure.pdf)
@@ -59,9 +59,9 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   <div class="card card-body">
     We share both recent and older, well-known results regarding the notions of stable ordinals and shrewd cardinals. We then argue that nonprojectible ordinals may be considered as recursive analogues to subtle cardinals, a highly combinatorial type of cardinal related to Jensen's fine structure, due to the latter possessing a characterisation in terms of shrewdnesss.
   </div>
+  </div>
 
   - ArXiV identifier: 2312.15818.
-  </div>
 
 I have not published any sets of notes regarding courses or particular topics.
 
