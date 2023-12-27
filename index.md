@@ -69,11 +69,14 @@ I have not published any sets of notes regarding courses or particular topics.
 
 I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles. For the sake of tidiness, I have sorted them in descending order in terms of how much I have written of them so far.
 
+- "Hod mice, The Ultimate K and the ultrapower axiom"
 - "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom"
 - "Polynomial regularities and tassels"
 - "A Beginner's Introduction to Set Theory"
 - "Fine structure of recursive functional hierarchies"
 - "The inverse collapse iteration hypotheses and p.f-bad conjecture"
+- "Large Cardinals, Elementary Resemblance and the Rayo-like Hierarchy"
+- "Layer-wise interpretation of higher-order arithmetic"
 - "The Truth Lattice, Causation and Modal Logic"
 - "Notes on Martin's Conjecture"
 - "Elementary variants of large cardinals and reducibility"
@@ -81,6 +84,9 @@ I'm preparing a couple of research articles and preprints. Of course, I won't up
 - "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection"
 - "A note on pseudo-ill-founded ordinal points"
 - "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
+- "The Xi function and higher-order computability"
+- "Absolute infinity in the modern context"
+- "Structure of implication"
 - "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks"
 - "Maximal projection functions below $$\omega_1$$"
 - "Global theories of ordinals, stable ordinals and hyperuniversality"
