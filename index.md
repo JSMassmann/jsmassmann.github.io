@@ -44,6 +44,23 @@ I have so far published 1 preprint. I shall keep a repository of all my papers, 
   <div class="card card-body">
     This paper serves to define an extension, which we call dimensional Veblen, of Oswald Veblen's system of ordinal functions below the large Veblen ordinal. This is facilitated by iterating derivatives of ordinal functions along multidimensional array structures, and can be viewed as the "maximal" natural extension of the Veblen functions. We then construct an ordinal notation based on it, and provide a conversion algorithm from Buchholz's function below the Bachmann-Howard ordinal.
   </div>
+
+  - ArXiV identifier: 2310.12832. The version available there also has minor typo fixes.
+  </div>
+
+- "Recursive Analogues of Shrewdness and Subtlety, with Applications to Fine Structure"
+  - [PDF](papers/RecAnalogue/Recursive_Analogues_of_Shrewdness_and_Subtlety__with_Applications_to_Fine_Structure.pdf)
+  - [TEX](papers/RecAnalogue/main.tex)
+  - [BIB](papers/RecAnalogue/main.bib)
+  - <a data-toggle="collapse" href="#collapseAbstract2" role="button" aria-expanded="false" aria-controls="collapseAbstract2">Abstract</a>
+
+  <div class="collapse" id="collapseAbstract2">
+
+  <div class="card card-body">
+    We share both recent and older, well-known results regarding the notions of stable ordinals and shrewd cardinals. We then argue that nonprojectible ordinals may be considered as recursive analogues to subtle cardinals, a highly combinatorial type of cardinal related to Jensen's fine structure, due to the latter possessing a characterisation in terms of shrewdnesss.
+  </div>
+
+  - ArXiV identifier: 2312.15818.
   </div>
 
 I have not published any sets of notes regarding courses or particular topics.
@@ -56,12 +73,12 @@ I'm preparing a couple of research articles and preprints. Of course, I won't up
 - "Polynomial regularities and tassels"
 - "A Beginner's Introduction to Set Theory"
 - "Fine structure of recursive functional hierarchies"
-- "Recursive Analogues of Shrewdness and Subtlety, with Applications to Fine Structure"
 - "The inverse collapse iteration hypotheses and p.f-bad conjecture"
 - "The Truth Lattice, Causation and Modal Logic"
 - "Notes on Martin's Conjecture"
 - "Elementary variants of large cardinals and reducibility"
 - "A Simple Approach to Admissible Proof Theory"
+- "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection"
 - "A note on pseudo-ill-founded ordinal points"
 - "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
 - "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks"
