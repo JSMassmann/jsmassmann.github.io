@@ -31,7 +31,7 @@ Maybe there'll be something here one day.
 
 ## My preprints and notes
 
-I have so far published 1 preprint. I shall keep a repository of all my papers, as well as their LaTeX source code, on this website. I'm quite pedantic and consistent in spacing, etc. in LaTeX.
+I have so far published 2 preprints. I shall keep a repository of all my papers, as well as their LaTeX source code, on this website. I'm quite pedantic and consistent in spacing, etc. in LaTeX.
 
 - "Extending the Veblen Function" w/ A. Kwon
   - [PDF](papers/DimVeb/Dimensional_Veblen.pdf)
