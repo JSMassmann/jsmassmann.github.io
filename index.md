@@ -84,6 +84,7 @@ I'm preparing a couple of research articles and preprints. Of course, I won't up
 - "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection"
 - "A note on pseudo-ill-founded ordinal points"
 - "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
+- "The pfng Conjecture and Its Solution"
 - "The Xi function and higher-order computability"
 - "Absolute infinity in the modern context"
 - "Structure of implication"
