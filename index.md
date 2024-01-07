@@ -25,6 +25,19 @@ I live in the UK and speak English fluently, and I used to speak German natively
 
 Here's where I'll put a repository of all my papers, slides, etc. related to my formal academic pursuit of mathematics.
 
+## My research interests
+
+This is basically my previous list of interests, but more specific (and it relates to things I actually do rather than, say, just reading).
+
+- Proof theory, especially ordinal analysis and ordinal notations.
+- Large cardinals and strong axioms of infinity.
+- Constructibility, fine structure and inner model theory.
+- Category theory and abstract algebra.
+- Recursion theory, and its infinitary generalizations.
+- Infinite game theory.
+
+I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models at a much higher level than I do currently.
+
 ## My research papers
 
 Maybe there'll be something here one day.
@@ -72,13 +85,13 @@ I'm preparing a couple of research articles and preprints, as well as a book or 
 - "Hod mice, The Ultimate K and the Ultrapower Axiom" - 24 pages
 - "Large Cardinals, Elementary Resemblance and the Rayo-like Hierarchy" - 22 pages
 - "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom" - 22 pages
-- "Polynomial regularities and tassels" - 15 pages
+- "Polynomial regularities and tassels" - 15 pages, with Lance Bakker and Michele Tomasi
 - "A Beginner's Introduction to Set Theory" - 12 pages
-- "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection" - 11 pages
+- "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection" - 11 pages, with Adrian Kwon
 - "Fine structure of recursive functional hierarchies" - 11 pages
 - "The inverse collapse iteration hypotheses and pfng conjecture" - 9 pages
-- "A Course in Apeirology" - 6 pages
-- "Layer-wise interpretation of higher-order arithmetic" - 6 pages
+- "A Course in Apeirology" - 6 pages, with Adrian Kwon
+- "Layer-wise interpretation of higher-order arithmetic" - 6 pages, with Paul Sharapov
 - "The Truth Lattice, Causation and Modal Logic" - 5 pages
 - "A Simple Approach to Admissible Proof Theory" - 4 pages
 - "Elementary variants of large cardinals and reducibility" - 4 pages
@@ -89,16 +102,16 @@ I'm preparing a couple of research articles and preprints, as well as a book or 
 - "Determinacy-type ordinal notations and fundamental sequences up to omega-one of chess" - 3 pages
 - "Infinitary card games and $$V \neq L$$" - 3 pages
 - "Infinite Mastermind" - 3 pages
-- "The Xi function and higher-order computability" - 3 pages
+- "The Xi function and higher-order computability" - 3 pages, with Paul Sharapov
 - "Absolute Infinity in the Modern Context" - 2 pages
 - "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks" - 2 pages
-- "Structure of implication" - 2 pages
-- "The $$\varsigma$$ sequence and its asymptotic behaviour" - 2 pages
+- "Structure of implication" - 2 pages, with Lance Bakker and Michele Tomasi
+- "The $$\varsigma$$ sequence and its asymptotic behaviour" - 2 pages, with Umut Tahiroğlu
 - "A new family of number classes bridging the gap between $$\mathbb{Q}$$ and $$\mathbb{R}$$" - 1 page
 - "Global theories of ordinals, stable ordinals and hyperuniversality" - 1 page
-- "Laver Tables have an Easy Recursive Description" - 1 page
+- "Laver Tables have an Easy Recursive Description" - 1 page, with Paul Sharapov
 - "Maximal projection functions below $$\omega_1$$" - 1 page
-- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$" - 1 page
+- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$" - 1 page, with Adrian Kwon
 
 ## My talks
 
