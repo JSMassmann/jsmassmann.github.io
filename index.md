@@ -67,31 +67,38 @@ I have not published any sets of notes regarding courses or particular topics.
 
 ## In preparation
 
-I'm preparing a couple of research articles and preprints. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles. For the sake of tidiness, I have sorted them in descending order in terms of how much I have written of them so far.
+I'm preparing a couple of research articles and preprints, as well as a book or two teaching set theory and "pure apeirology" to beginners. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles (as well as in-progress page counts). For the sake of tidiness, I have sorted them in descending order in terms of how much I have written of them so far.
 
-- "Hod mice, The Ultimate K and the ultrapower axiom"
-- "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom"
-- "Polynomial regularities and tassels"
-- "A Beginner's Introduction to Set Theory"
-- "Fine structure of recursive functional hierarchies"
-- "The inverse collapse iteration hypotheses and p.f-bad conjecture"
-- "Large Cardinals, Elementary Resemblance and the Rayo-like Hierarchy"
-- "Layer-wise interpretation of higher-order arithmetic"
-- "The Truth Lattice, Causation and Modal Logic"
-- "Notes on Martin's Conjecture"
-- "Elementary variants of large cardinals and reducibility"
-- "A Simple Approach to Admissible Proof Theory"
-- "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection"
-- "A note on pseudo-ill-founded ordinal points"
-- "Fundamental sequences up to omega-one of chess, and determinacy-type ordinal notations"
-- "The pfng Conjecture and Its Solution"
-- "The Xi function and higher-order computability"
-- "Absolute infinity in the modern context"
-- "Structure of implication"
-- "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks"
-- "Maximal projection functions below $$\omega_1$$"
-- "Global theories of ordinals, stable ordinals and hyperuniversality"
-- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$"
+- "Hod mice, The Ultimate K and the Ultrapower Axiom" - 24 pages
+- "Large Cardinals, Elementary Resemblance and the Rayo-like Hierarchy" - 22 pages
+- "Quasiprojective Determinacy, the I0 Axiom and the Ultrapower Axiom" - 22 pages
+- "Polynomial regularities and tassels" - 15 pages
+- "A Beginner's Introduction to Set Theory" - 12 pages
+- "A Simplified Ordinal Representation System for Kripke-Platek set theory with first-order reflection" - 11 pages
+- "Fine structure of recursive functional hierarchies" - 11 pages
+- "The inverse collapse iteration hypotheses and pfng conjecture" - 9 pages
+- "A Course in Apeirology" - 6 pages
+- "Layer-wise interpretation of higher-order arithmetic" - 6 pages
+- "The Truth Lattice, Causation and Modal Logic" - 5 pages
+- "A Simple Approach to Admissible Proof Theory" - 4 pages
+- "Elementary variants of large cardinals and reducibility" - 4 pages
+- "Notes on Martin's Conjecture" - 4 pages
+- "Pseudocritical points and discontinuity of large cardinal embeddings" - 4 pages
+- "The pfng Conjecture and Its Solution" - 4 pages
+- "A note on pseudo-ill-founded ordinal points" - 3 pages
+- "Determinacy-type ordinal notations and fundamental sequences up to omega-one of chess" - 3 pages
+- "Infinitary card games and $$V \neq L$$" - 3 pages
+- "Infinite Mastermind" - 3 pages
+- "The Xi function and higher-order computability" - 3 pages
+- "Absolute Infinity in the Modern Context" - 2 pages
+- "Expressive Complexity Theory and $$< \omega$$-Completeness Frameworks" - 2 pages
+- "Structure of implication" - 2 pages
+- "The $$\varsigma$$ sequence and its asymptotic behaviour" - 2 pages
+- "A new family of number classes bridging the gap between $$\mathbb{Q}$$ and $$\mathbb{R}$$" - 1 page
+- "Global theories of ordinals, stable ordinals and hyperuniversality" - 1 page
+- "Laver Tables have an Easy Recursive Description" - 1 page
+- "Maximal projection functions below $$\omega_1$$" - 1 page
+- "The paradigm of collapsification and natural ordinal representations beyond $$\Pi^1_1 \textrm{-CA+BI}$$" - 1 page
 
 ## My talks
 
