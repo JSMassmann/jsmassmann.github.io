@@ -36,7 +36,7 @@ This is basically my previous list of interests, but more specific (and it relat
 - Recursion theory, and its infinitary generalizations.
 - Infinite game theory.
 
-I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models at a much higher level than I do currently.
+I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms and generic ultrapowers) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
 
 ## My research papers
 
