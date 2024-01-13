@@ -38,7 +38,7 @@ This is basically my previous list of interests, but more specific (and it relat
 
 I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms and generic ultrapowers) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
 
-My ORCID is 0009-0003-8458-4700.
+My ORCID is 0009-0003-8458-4700. My Erdős number is <code>NaN</code>.
 
 ## My research papers
 
