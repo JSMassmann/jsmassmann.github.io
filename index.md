@@ -96,10 +96,12 @@ I'm preparing a couple of research articles and preprints, as well as a book or 
 - "A Simple Approach to Admissible Proof Theory" - 4 pages
 - "Elementary variants of large cardinals and reducibility" - 4 pages
 - "Notes on Martin's Conjecture" - 4 pages
-- "Pseudocritical points and discontinuity of large cardinal embeddings" - 4 pages
+- "Pseudocritical points and discontinuity of large cardinal embeddings" - 4 pages, with Rachel Hunter
 - "The pfng Conjecture and Its Solution" - 4 pages
+- "A Cohen and Prikry-like Forcing for Adding a Stationary Subset of $$\omega_1$$" - 3 pages
 - "A note on pseudo-ill-founded ordinal points" - 3 pages
 - "Determinacy-type ordinal notations and fundamental sequences up to omega-one of chess" - 3 pages
+- "Elementary Embeddings of $$L$$'s Initial Segments" - 3 pages, with Rachel Hunter and Keith Millar
 - "Infinitary card games and $$V \neq L$$" - 3 pages
 - "Infinite Mastermind" - 3 pages
 - "The Xi function and higher-order computability" - 3 pages, with Paul Sharapov
