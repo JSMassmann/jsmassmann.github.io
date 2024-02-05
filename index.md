@@ -80,9 +80,11 @@ I have so far published 2 preprints. I shall keep a repository of all my papers,
 
 I have not published any sets of notes regarding courses or particular topics.
 
+I'm the author of OEIS sequence A368423.
+
 ## In preparation
 
-I'm preparing a "couple" of research articles and preprints, as well as a book or two teaching set theory and "pure apeirology" to beginners. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles (as well as in-progress page counts). For the sake of tidiness, I have sorted them in descending order in terms of how much I have written of them so far.
+I'm preparing a couple of research articles and preprints, as well as a book or two teaching set theory and "pure apeirology" to beginners. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism, but I might as well make a list of their titles (as well as in-progress page counts). For the sake of tidiness, I have sorted them in descending order in terms of how much I have written of them so far. Yes, it's a lot; yes, it's going to be a while until I finish even one.
 
 - "Hod mice, The Ultimate K and the Ultrapower Axiom" - 24 pages
 - "Large Cardinals, Elementary Resemblance and the Rayo-like Hierarchy" - 22 pages
@@ -93,6 +95,7 @@ I'm preparing a "couple" of research articles and preprints, as well as a book o
 - "Fine structure of recursive functional hierarchies" - 11 pages
 - "One Can Force the Ultrapower Axiom" - 9 pages
 - "The inverse collapse iteration hypotheses and pfng conjecture" - 9 pages
+- "$$\omega_1^{\mathfrak{Ch}} \geq \varepsilon_0$$" - 6 pages, with Adrian Kwon
 - "A Course in Apeirology" - 6 pages, with Adrian Kwon
 - "Layer-wise interpretation of higher-order arithmetic" - 6 pages, with Paul Sharapov
 - "The Truth Lattice, Causation and Modal Logic" - 5 pages
