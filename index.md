@@ -21,9 +21,15 @@ My pronouns are she/her - but feel free to use they/them or neopronouns. As you 
 
 I live in the UK and speak English fluently, and I used to speak German natively. My Myers-Briggs personality type is INTP-T.
 
+You can reach me by email at sylvie@83c.nl.
+
 # Academia-related
 
 Here's where I'll put a repository of all my papers, slides, etc. related to my formal academic pursuit of mathematics.
+
+My ORCID is 0009-0003-8458-4700.
+My Erdős number is <code>NaN</code>.
+I'm the author of OEIS sequence A368423.
 
 ## My research interests
 
@@ -38,7 +44,7 @@ This is basically my previous list of interests, but more specific (and it relat
 
 I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms and generic ultrapowers) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
 
-My ORCID is 0009-0003-8458-4700. My Erdős number is <code>NaN</code>. You can reach me by email at sylvie@83c.nl.
+I know some basic abstract algebra and algebraic number theory, and I intend to diversify my areas of interest from set theory to other areas of maths and physics, such as the aforementioned two areas, as well as homological algebra, group theory and differential geometry with applications to quantum physics, and Hodge theory. There's probably going to be a long gap of time between now and when I even start properly learning and researching these, but from what I know so far they seem very interesting!
 
 ## My research papers
 
@@ -79,8 +85,6 @@ I have so far published 2 preprints. I shall keep a repository of all my papers,
   - ArXiV identifier: 2312.15818.
 
 I have not published any sets of notes regarding courses or particular topics.
-
-I'm the author of OEIS sequence A368423.
 
 ## In preparation
 
