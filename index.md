@@ -42,7 +42,7 @@ This is basically my previous list of interests, but more specific (and it relat
 - Recursion theory, and its infinitary generalizations.
 - Infinite game theory.
 
-I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms and generic ultrapowers) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
+I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms, generic ultrapowers and set-theoretic geology) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
 
 I know some basic abstract algebra and algebraic number theory, and I intend to diversify my areas of interest from set theory to other areas of maths and physics, such as the aforementioned two areas, as well as homological algebra, group theory and differential geometry with applications to quantum physics, and Hodge theory. There's probably going to be a long gap of time between now and when I even start properly learning and researching these, but from what I know so far they seem very interesting!
 
