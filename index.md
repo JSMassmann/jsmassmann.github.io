@@ -9,8 +9,8 @@
 
 I'm a trans girl. My interests include:
 
-- Maths, particularly computability theory, computational complexity theory, alpha-recursion theory, set theory, model theory and proof theory.
-- Programming. I know Python, JavaScript, C++, C# and Go. I have also dabbled in ASM.
+- Maths, particularly computability theory, cryptography, set theory, model theory and proof theory.
+- Programming. I know Python, JavaScript, C++, C# and Go. I have also dabbled in x86 NASM.
 - All other sciences, but I don't know them at such a high level as I do maths and CS.
 - The great video game Celeste.
 - Listening to music. I have extremely eclectic tastes, recently I've really liked the "Hamilton" soundtrack.
@@ -41,10 +41,11 @@ This is basically my previous list of interests, but more specific (and it relat
 - Category theory and abstract algebra.
 - Recursion theory, and its infinitary generalizations.
 - Infinite game theory.
+- Cryptography and cryptanalysis.
 
 I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms, generic ultrapowers and set-theoretic geology) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
 
-I know some basic abstract algebra and algebraic number theory, and I intend to diversify my areas of interest from set theory to other areas of maths and physics, such as the aforementioned two areas, as well as homological algebra, group theory and differential geometry with applications to quantum physics, and Hodge theory. There's probably going to be a long gap of time between now and when I even start properly learning and researching these, but from what I know so far they seem very interesting!
+I know some basic abstract algebra and algebraic number theory, and I intend to diversify my areas of interest from set theory to other areas of maths and physics, such as the aforementioned two areas.
 
 ## My research papers
 
