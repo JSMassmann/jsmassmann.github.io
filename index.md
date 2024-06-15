@@ -72,3 +72,10 @@ I'm preparing a couple of research articles and preprints, as well as a book or 
 My languages of choice are Python, C++ and JavaScript. I also used to know C# and Go.
 
 For very low-level things, x64 assembly is my main tool, despite all of its flaws. I'm currently developing a RISC alternative to it.
+
+# Tarballs
+
+Below are <code>.tar.gz</code> archives, for projects containing multiple files and a lot of data or code, created through <code>tar -zcvf</code>.
+
+- A tarball of the Dimensional Veblen PDF, bibliography and source code: [dimveb.tar.gz](tarballs/dimveb.tar.gz).
+- A tarball of the recursive analogues PDF, bibliography and source code: [recanalogue.tar.gz](tarballs/recanalogue.tar.gz).
