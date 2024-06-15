@@ -7,49 +7,25 @@
 
 # Hiii!
 
-I'm a trans girl. My interests include:
+I'm a trans girl. I like maths, programming, Celeste, listening to music and cats. I also used to watch anime quite a lot.
 
-- Maths, particularly computability theory, cryptography, set theory, model theory and proof theory.
-- Programming. I know Python, JavaScript, C++, C# and Go. I have also dabbled in x86 NASM.
-- All other sciences, but I don't know them at such a high level as I do maths and CS.
-- The great video game Celeste.
-- Listening to music. I have extremely eclectic tastes, recently I've really liked the "Hamilton" soundtrack.
+# Somewhat extraneous facts
 
-# Other somewhat extraneous facts
-
-My pronouns are she/her - but feel free to use they/them or neopronouns. As you could guess, I’m a proud member of the LGBTQ+ community.
+My pronouns are she/her - but feel free to use they/them or neopronouns. As one could guess from that, I’m a proud member of the LGBTQ+ community.
 
 I live in the UK and speak English fluently, and I used to speak German natively. My Myers-Briggs personality type is INTP-T.
 
-You can reach me by email at sylvie@83c.nl.
+You can reach me by email at sylvie at 83c dot nl. It's a redirect to my main email, which I'm probably not going to put online. I might just set up my own SMTP server at some point.
 
-# Academia-related
-
-Here's where I'll put a repository of all my papers, slides, etc. related to my formal academic pursuit of mathematics.
+# Maths
 
 My ORCID is 0009-0003-8458-4700.
-My Erdős number is <code>NaN</code>.
+My Erdős number is <code>NaN</code>: the only person who I've collaborated with has only collaborated with me.
 I'm the author of OEIS sequence A368423.
 
 ## My research interests
 
-This is basically my previous list of interests, but more specific (and it relates to things I actually do rather than, say, just reading).
-
-- Proof theory, especially ordinal analysis and ordinal notations.
-- Large cardinals and strong axioms of infinity.
-- Constructibility, fine structure and inner model theory.
-- Category theory and abstract algebra.
-- Recursion theory, and its infinitary generalizations.
-- Infinite game theory.
-- Cryptography and cryptanalysis.
-
-I am currently learning about determinacy, descriptive set theory, saturated ideals, and their connections to inner models with large cardinals. I also want to understand fine structure theory for inner models, and forcing (especially forcing axioms, generic ultrapowers and set-theoretic geology) at a much higher level than I do currently - right now I'm enthusiastic but don't know much beyond the basics.
-
-I know some basic abstract algebra and algebraic number theory, and I intend to diversify my areas of interest from set theory to other areas of maths and physics, such as the aforementioned two areas.
-
-## My research papers
-
-Maybe there'll be something here one day.
+I like proof theory, large cardinals, inner model theory, recursion theory and cryptography. For some of these my knowledge isn't as good as it can be, but I'm currently not focusing that much on learning new things.
 
 ## My preprints and notes
 
@@ -91,27 +67,8 @@ I have not published any sets of notes regarding courses or particular topics.
 
 I'm preparing a couple of research articles and preprints, as well as a book or two teaching set theory and "pure apeirology" to beginners. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism.
 
-## My talks
+# Programming
 
-I have not yet been invited to present any talks.
+My languages of choice are Python, C++ and JavaScript. I also used to know C# and Go.
 
-I have prepared slides, in the event I do ever present talks, regarding some papers. They may be easier to understand than those papers, which is one of the main reasons I'm uploading them here.
-
-- "Ordinal Notations up to $$\eta_0$$", describing results of "Extending the Veblen Function".
-  - [PDF](slides/DimVeb/Slides.pdf)
-  - [Shortened PDF](slides/DimVeb/Slides%20(1).pdf)
-  - [TEX](slides/DimVeb/main.tex)
-
-Once again, all slides shall be uploaded. I also uploaded shortened versions, which omit pauses.
-
-## My books
-
-Maybe there'll be something here one day.
-
-## My manuscripts and monographs
-
-Maybe there'll be something here one day.
-
-## Service activities
-
-Maybe there'll be something here one day.
+For very low-level things, x64 assembly is my main tool, despite all of its flaws. I'm currently developing a RISC alternative to it.
