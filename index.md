@@ -18,7 +18,7 @@ I live in the UK and speak English fluently, and I used to speak German natively
 # Maths
 
 My ORCID is 0009-0003-8458-4700.
-My Erdős number is <code>NaN</code>: the only person who I've collaborated with has only collaborated with me.
+My Erdős number is `NaN`: the only person who I've collaborated with has only collaborated with me.
 I'm the author of OEIS sequence A368423.
 
 ## My research interests
@@ -73,7 +73,7 @@ For very low-level things, x64 assembly is my main tool, despite all of its flaw
 
 # Tarballs
 
-Below are <code>.tar.gz</code> archives, for projects containing multiple files and a lot of data or code, created through <code>tar -zcvf</code>. I've also attached SHA-256 sums, to ensure you're not downloading a corrupt PDF.
+Below are `.tar.gz` archives, for projects containing multiple files and a lot of data or code, created through `tar -zcvf`. I've also attached SHA-256 sums, to ensure you're not downloading a corrupt PDF.
 
 - A tarball of the Dimensional Veblen PDF, bibliography and source code: [dimveb.tar.gz](tarballs/dimveb.tar.gz) ([sha256](sha256sums/dimveb.tar.gz.sha256)).
 - A tarball of the recursive analogues PDF, bibliography and source code: [recanalogue.tar.gz](tarballs/recanalogue.tar.gz) ([sha256](sha256sums/recanalogue.tar.gz.sha256)).
