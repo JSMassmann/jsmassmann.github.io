@@ -43,7 +43,7 @@ Using standard encodings, we can do stuff with this language.
 
 This implies e.g. `1 = [[]]`, `2 = [[],[]]`, etc. and also implies strange results such as `0 == [] == false`.
 
-Let us write some example programs in BW (we add new lines for ease of reading). First of all:
+Let us write some example programs in BW (we add spaces and new lines for ease of reading). First of all:
 
 This program reads two numbers `n` and `m` from stdin (encoded as `[n, m]`) and writes `n+m` to stdout.
 
@@ -98,4 +98,46 @@ And lastly, a program reading `n` and `m` from stdin and writing `n-m` (zero if 
 00 1110 1010 1110
 00 11110 1010 11110
 011
+```
+
+For some operations on booleans, the below reads two booleans `n` and `m` from stdin and prints `n AND m` to stdout:
+
+```
+10
+11 1 0 1 0 1001 1010 110
+00 1110 1001 110
+00 1110 1011
+011
+```
+
+Meanwhile for `OR`:
+
+```
+10
+11 1 0 1 0 1001 1010 110
+00 1110 1000 1011 1011
+00 1110 1001 11
+011
+```
+
+And for `XOR`:
+
+```
+10
+11 111 0 1 0 1001 1010 110
+11 1 0 1 0 1001 110
+00 1110 1011
+00 1110 1000 1011 1011
+00 1110 1001 110
+011
+```
+
+Lastly, this program reads `n` from stdin and prints `NOT n` to stdout:
+
+```
+10
+11 1 0 1 0 110
+00 110 1011
+00 110 1000 1011 1011
+01
 ```
