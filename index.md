@@ -21,6 +21,10 @@ My ORCID is 0009-0003-8458-4700.
 My Erdős number is `NaN`: the only person who I've collaborated with has only collaborated with me.
 I'm the author of OEIS sequence A368423.
 
+Below are some small blogs or expositions I've put on my website:
+
+- [Binary WHILE](blog/BW.md).
+
 ## My research interests
 
 I like proof theory, large cardinals, inner model theory, recursion theory and cryptography. For some of these my knowledge isn't as good as it can be, but I'm currently not focusing that much on learning new things.
