@@ -141,3 +141,18 @@ Lastly, this program reads `n` from stdin and prints `NOT n` to stdout:
 00 110 1000 1011 1011
 01
 ```
+
+This language was partially inspired by John Tromp's binary lambda calculus. It doesn't quite compete in terms of simplicity, but below we show a comparison of complexities of the basic functions illustrated above between BW and BLC, plus a cat:
+
+| Program | BW bits | BLC bits |
+|---------|---------|----------|
+| cat     | 4       | 4        |
+| plus    | 80      | 33       |
+| succ    | 20      | 24       |
+| mult    | 127     | 28       |
+| pred    | 16      | 43       |
+| minus   | 76      | 56       |
+| and     | 45      | 15       |
+| or      | 52      | 15       |
+| xor     | 78      | 36       |
+| not     | 39      | 19       |
