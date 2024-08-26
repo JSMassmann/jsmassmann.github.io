@@ -45,12 +45,12 @@ This implies e.g. `1 = [[]]`, `2 = [[],[]]`, etc. and also implies strange resul
 
 Let us write some example programs in BW (we add spaces and new lines for ease of reading). First of all:
 
-This program reads two numbers `n` and `m` from stdin (encoded as `[n, m]`) and writes `n+m` to stdout.
+This program reads two numbers `n` and `m` from stdin (encoded as `(n, m)`) and writes `n+m` to stdout.
 
 ```
 10
 00 1110 1001 110
-00 11110 1001 1010 110
+00 11110 1010 110
 01 110 11110
 00 1110 1000 1011 1110
 00 11110 1010 11110
@@ -70,7 +70,7 @@ For multiplication of numbers, we have:
 ```
 10
 00 1110 1001 110
-00 11110 1001 1010 110
+00 11110 1010 110
 01 11111 0 11110
 00 111110 1001 110
 01 11 0 111110
@@ -93,7 +93,7 @@ And lastly, a program reading `n` and `m` from stdin and writing `n-m` (zero if 
 ```
 10
 00 1110 1001 110
-00 11110 1001 1010 110
+00 11110 1010 110
 01 110 11110
 00 1110 1010 1110
 00 11110 1010 11110
@@ -104,7 +104,7 @@ For some operations on booleans, the below reads two booleans `n` and `m` from s
 
 ```
 10
-11 1 0 1 0 1001 1010 110
+11 1 0 1 0 1010 110
 00 1110 1001 110
 00 1110 1011
 011
@@ -114,7 +114,7 @@ Meanwhile for `OR`:
 
 ```
 10
-11 1 0 1 0 1001 1010 110
+11 1 0 1 0 1010 110
 00 1110 1000 1011 1011
 00 1110 1001 11
 011
@@ -124,7 +124,7 @@ And for `XOR`:
 
 ```
 10
-11 111 0 1 0 1001 1010 110
+11 111 0 1 0 1010 110
 11 1 0 1 0 1001 110
 00 1110 1011
 00 1110 1000 1011 1011
@@ -147,12 +147,12 @@ This language was partially inspired by John Tromp's binary lambda calculus. It 
 | Program | BW bits | BLC bits |
 |---------|---------|----------|
 | cat     | 4       | 4        |
-| plus    | 80      | 33       |
+| plus    | 76      | 33       |
 | succ    | 20      | 24       |
-| mult    | 127     | 28       |
+| mult    | 123     | 28       |
 | pred    | 16      | 43       |
-| minus   | 76      | 56       |
-| and     | 45      | 15       |
-| or      | 52      | 15       |
-| xor     | 78      | 36       |
+| minus   | 72      | 56       |
+| and     | 41      | 15       |
+| or      | 48      | 15       |
+| xor     | 74      | 36       |
 | not     | 39      | 19       |
