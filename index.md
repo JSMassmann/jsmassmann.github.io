@@ -69,6 +69,20 @@ I have not published any sets of notes regarding courses or particular topics.
 
 I'm preparing a couple of research articles and preprints, as well as a book or two teaching set theory and "pure apeirology" to beginners. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism.
 
+## Talks
+
+- "Subtlety, interpretability and nonprojectibility" (contributed talk, European Set Theory Conference 2024)
+  - [PDF](slides/RecSub/Slides.pdf)
+  - [TEX](slides/RecSub/main.tex)
+  - <a data-toggle="collapse" href="#collapseAbstract1" role="button" aria-expanded="false" aria-controls="collapseAbstract1">Abstract</a>
+
+  <div class="collapse" id="collapseAbstract1">
+
+  <div class="card card-body">
+    In this talk I discuss my theorem that $$\Sigma_2$$-nonprojectility can be considered analogous to subtlety; formally, that a notion which many would agree encapsulates the strength of subtlety is in fact equivalent to $$\Sigma_2$$-nonprojectibility. I therefore focus on two polar opposites in the ordinals: countable ordinals and large cardinals. We consider analogies in the structure of these. Kranakis, Richter, Aczel, Klev, Rathjen & Kaufmann have in the past discussed countable analogues to large cardinals and the difficulty of formalizing such a general notion. As part of my case I share some previously known results on the structure of stable ordinals and an equivalence of subtle cardinals (a combinatorial principle) with a significant strengthening of indescribability.
+  </div>
+  </div>
+
 # Programming
 
 My languages of choice are Python, C++ and JavaScript. I also used to know C# and Go.
