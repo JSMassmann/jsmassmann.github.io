@@ -79,7 +79,7 @@ I'm preparing a couple of research articles and preprints, as well as a book or 
   <div class="collapse" id="collapseAbstract3">
 
   <div class="card card-body">
-    In this talk I discuss my theorem that $$\Sigma_2$$-nonprojectility can be considered analogous to subtlety; formally, that a notion which many would agree encapsulates the strength of subtlety is in fact equivalent to $$\Sigma_2$$-nonprojectibility. I therefore focus on two polar opposites in the ordinals: countable ordinals and large cardinals. We consider analogies in the structure of these. Kranakis, Richter, Aczel, Klev, Rathjen & Kaufmann have in the past discussed countable analogues to large cardinals and the difficulty of formalizing such a general notion. As part of my case I share some previously known results on the structure of stable ordinals and an equivalence of subtle cardinals (a combinatorial principle) with a significant strengthening of indescribability.
+    In this talk I discuss my theorem that \(\Sigma_2\)-nonprojectility can be considered analogous to subtlety; formally, that a notion which many would agree encapsulates the strength of subtlety is in fact equivalent to \(\Sigma_2\)-nonprojectibility. I therefore focus on two polar opposites in the ordinals: countable ordinals and large cardinals. We consider analogies in the structure of these. Kranakis, Richter, Aczel, Klev, Rathjen & Kaufmann have in the past discussed countable analogues to large cardinals and the difficulty of formalizing such a general notion. As part of my case I share some previously known results on the structure of stable ordinals and an equivalence of subtle cardinals (a combinatorial principle) with a significant strengthening of indescribability.
   </div>
   </div>
 
