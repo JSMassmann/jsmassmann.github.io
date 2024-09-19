@@ -1,0 +1,304 @@
+\documentclass{beamer}
+%Information to be included in the title page:
+\title{Stability, interpretability and nonprojectibility}
+\author{Jayde Massmann}
+\date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\usepackage{tikz}
+\usetheme{Copenhagen}
+\usecolortheme{default}
+
+\usepackage{parskip}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\newcommand{\Ord}{\mathsf{Ord}}
+\newcommand{\ZFC}{\mathsf{ZFC}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Reflection principles}
+Reflection principles and inaccessible cardinals turn out to be a major driving theme in modern set theory. \pause
+
+\begin{itemize}
+    \item The universe of all sets is stratified via the von Neumann hierarchy $\langle V_\alpha: \alpha \in \Ord \rangle$.
+    \item Lévy-Montague reflection: even without having to assume the existence of inaccessible cardinals etc, $\Ord$ has powerful reflection properties.
+    \item For any first-order formula, any set is contained in some object which ``reflects'' that formula, i.e. satisfies it iff the whole universe does.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Formal reflection}
+If $\kappa$ is an inaccessible cardinal, then $V_\kappa$ satisfies all the axioms of ordinary set theory, $\ZFC$, and so this reflection principle holds inside $V_\kappa$. We can actually do better, by permitting special predicate symbols (i.e. extending the language of set theory by a ``black box'' oracle).
+
+\begin{block}{Definition}
+Let $n, m < \omega$. Then a cardinal $\kappa$ is called $\Pi^n_m$-indescribable if, whenever $\varphi$ is a $\Pi_m(\dot{A})$ sentence and $A \subseteq V_\kappa$ is so that $\langle V_{\kappa+n}, \in, A \rangle \models \varphi$, there is $\alpha < \kappa$ so that $\langle V_{\alpha+n}, \in, A \cap V_\alpha \rangle \models \varphi$.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Notes}
+$n$ is meant to be the ``order'', as e.g. a first-order sentence over $V_{\kappa+1}$ becomes a second-order sentence over $V_\kappa$. So the following are basically equivalent: $\kappa$ is $\Pi^n_0$-indescribable, and the $n$-th order reflection principle with a predicate holds in $V_\kappa$. In particular:
+
+\begin{block}{Lemma}
+$\kappa$ is inaccessible iff it is $\Pi^1_0$-indescribable.
+\end{block}
+
+However, for all $n < \omega$, the least $\Pi^1_n$-indescribable cardinal is not $\Pi^1_{n+1}$-indescribable.
+\end{frame}
+
+\section{Admissibility}
+
+\begin{frame}
+\frametitle{Admissible sets}
+\begin{itemize}
+    \item At the countable level, analogues to regular or indescribable cardinals can be obtained by stratifying our universe via the constructible hierarchy instead.
+    \item Say $M$ is admissible if all axioms of Kripke-Platek set theory hold within $M$.
+    \item For example, $V_{\omega+\omega}$ satisfies all axioms of Kripke-Platek set theory except $\Delta_0$-collection.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Admissible ordinals}
+\begin{itemize}
+    \item In general, if $V_\kappa$ is admissible, then $\beth_\kappa = \kappa$.
+    \item Meanwhile, by using a ``predicative'' construction, and in particular not adding all possible subsets at each next stage, we'll be immune to this counterexample.
+    \item The smallest admissible ordinal is equal to $\omega_1^{\mathrm{CK}}$. This is the supremum of order-types of computable well-orders of $\omega$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Generalized recursion theory}
+Say $A \subseteq L_\alpha$ is $\alpha$-recursive (resp. $\alpha$-recursively enumerable) if it is $\Delta_1(L_\alpha)$ (resp. $\Sigma_1(L_\alpha)$). The reason for the naming ``$\alpha$-recursive'' is that a subset of $\omega$ is recursive (i.e. computable) iff it is $\Delta^0_1$ in the arithmetical hierarchy, and recursively enumerable iff it is $\Sigma^0_1$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Recursive analogues}
+Admissible ordinals are traditionally considered as a ``recursive analogue'' of regular cardinals because $\alpha$ is admissible iff $\alpha > \omega$, $\alpha$ is a limit ordinal and either of the following hold:
+
+\begin{itemize}
+    \item For all $\delta < \alpha$, there is no $\alpha$-recursively enumerable map $\delta \to \alpha$ with cofinal range.
+    \item For all $\delta < \alpha$, there is no $\alpha$-recursive surjection $\delta \to \alpha$.
+\end{itemize}
+
+This suggests attempting to generalize other large cardinal axioms to the countable level. $\Pi^1_n$-indescribability in particular can be copied almost verbatim, although one has to replace the predicate $A$ with a parameter $b \in L_\alpha$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Reflecting ordinals}
+\begin{block}{Definition}
+An ordinal $\alpha$ is $\Pi_n$-reflecting if $\alpha > 0$ and, whenever $\varphi$ is a $\Pi_n$-formula and $b \in L_\alpha$ is so that $L_\alpha \models \varphi(b)$, there is $\beta < \alpha$ so that $b \in L_\beta$ and $L_\beta \models \varphi(b)$.
+\end{block}
+
+It's immediate to see that any $\Pi_n$-reflecting ordinal is a limit ordinal. Due to downwards absoluteness, $\Pi_1$-reflection is actually equivalent to being a limit.
+\end{frame}
+
+\begin{frame}
+\frametitle{$n > 1$}
+\begin{itemize}
+    \item Meanwhile, $\Pi_2$-reflection is equivalent to admissibility.
+    \item For $n > 2$, any $\Pi_n$-reflecting ordinal is a limit of $\Pi_2$-reflecting ordinals.
+    \item In general, for $n > 0$, the recursive analogue of $\Pi^1_n$-indescribability may be considered to be $\Pi_{n+2}$-reflection.
+\end{itemize}
+\end{frame}
+
+\section{Shrewdness and stability}
+
+\begin{frame}
+\frametitle{Transfinite extensions}
+\begin{itemize}
+    \item My work primarily focuses on transfinite extensions of these, i.e. notions beyond $\Pi^n_m$-indescribability or $\Pi_n$-reflection for $n, m < \omega$.
+    \item Unfortunately, directly generalizing indescribability or reflection (e.g. simply considering $\Pi^\alpha_m$-indescribability for arbitrary ordinals $\alpha$, without changing the definition) doesn't work.
+    \item Instead, we need to slightly modify the definitions. The three notions given in the following definition are, among nonprojectibility and subtlety, going to be the key ones.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Shrewdness, transfinite reflection and stability}
+\begin{block}{Definition}
+Let $\eta > 0$. A cardinal $\kappa$ is called $\eta$-shrewd iff, for all $P \subseteq V_\kappa$ and every formula $\varphi(x)$ (possibly using the new predicate $\dot{A}$), if $\langle V_{\kappa+\eta}, \in, P \rangle \models \varphi(\kappa)$, then there exist $0 < \kappa_0, \eta_0 < \kappa$ so that $\langle V_{\kappa_0+\eta_0}, \in, P \cap V_{\kappa_0} \rangle \models \varphi(\kappa_0)$.
+
+An ordinal $\alpha$ is called $\xi$-$\Pi_n$-reflecting iff, for all $b \in L_\alpha$ and every $\Pi_n$-formula $\varphi(x)$, if $L_{\alpha+\xi} \models \varphi(b)$, then there exist $\alpha_0, \xi_0 < \alpha$ so that $b \in L_{\alpha_0}$ and $L_{\alpha_0+\xi_0} \models \varphi(b)$.
+
+Let $\xi > 0$. An ordinal $\alpha$ is called $\xi$-stable iff, for all $b \in L_\alpha$ and every $\Sigma_1$-formula $\varphi(x)$, $L_\alpha \models \varphi(b)$ iff $L_{\alpha+\xi} \models \varphi(b)$.
+\end{block}
+\end{frame}
+
+\section{Introducing and eliminating oracles}
+
+\begin{frame}
+\frametitle{$\mathcal{A}$-stability}
+Naturally, one may consider adding back an oracle.
+
+\begin{block}{Definition}
+Let $\mathcal{A}$ be an arbitrary class and let $\xi > 0$. An ordinal $\alpha$ is called $\mathcal{A}$-$\xi$-stable iff, for all $b \in L_\alpha$ and every $\Sigma_1(\dot{A})$-formula $\varphi(x)$, $\langle L_\alpha, \in, \mathcal{A} \cap L_\alpha \rangle \models \varphi(b)$ iff $\langle L_{\alpha+\xi}, \in, \mathcal{A} \cap L_{\alpha+\xi} \rangle \models \varphi(b)$.
+\end{block}
+
+\pause
+
+This notion is trivial when $\mathcal{A} \subseteq L_\alpha$, and obviously most interesting when $\mathcal{A} \subseteq L_{\alpha+\xi}$.
+\end{frame}
+
+\begin{frame}
+\frametitle{An example}
+This notion can attain exorbitant strength -- for example, let $\xi > \alpha$, $L_\xi \models \ZFC$ and $\mathcal{A}$ be the set of $\beta < \xi$ which are $\xi$-stable. \pause Then $\alpha$ is $\mathcal{A}$-$\xi$-stable iff the ordinary definition of $\xi$-stability holds for $\alpha$, but where $\varphi$ is allowed to $\Sigma_2$. That is, $\Sigma_1(\dot{A})$-substructurehood in this case paves the way for full $\Sigma_2$-substructurehood. $\Sigma_2$-stability is actually possibly more relevant to our work than $\Sigma_1$-stability.
+\end{frame}
+
+\begin{frame}
+\frametitle{What are subtle cardinals?}
+Subtle cardinals were introduced by Ronald Jensen in his analysis of the fine structure of $L$.
+
+\begin{block}{Definition}
+A cardinal $\kappa$ is subtle if the following holds. Let $C \subseteq \kappa$ be an arbitrary club (closed and unbounded) set. And assume $\vec{S}: C \to \mathcal{P}(\kappa)$ is regressive, in that $\vec{S}(\alpha) \subseteq \alpha$ for all $\alpha \in C$. Then there are $\beta, \delta \in C$ so that $\beta < \delta$ and $\vec{S}(\delta) \cap \beta = \vec{S}(\beta)$.
+\end{block}
+
+If $\kappa$ is subtle, then $\lozenge_\kappa$ holds.
+\end{frame}
+
+\begin{frame}
+\frametitle{Why did we mention them?}
+\begin{itemize}
+    \item It's known that subtle cardinals are ``small'' large cardinals.
+    \item They're below Ramsey, measurable, etc. cardinals (and other ultrafilter- or elementary embedding-based large cardinals) in terms of consistency strength.
+    \item But they're above $\Pi^n_m$-indescribable cardinals for all $n, m < \omega$.
+    \item So it's natural to try to also calibrate a recursive analogue of them.
+    \item It turns out: there's a characterisation of subtlety via shrewdness!
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Extra oracles for shrewdness...}
+As one may expect, this characterisation involves adding an extra oracle for shrewdness. 
+
+\begin{definition}
+Let $\mathcal{A}$ be an arbitrary class and let $\eta > 0$. A cardinal $\kappa$ is called $\mathcal{A}$-$\eta$-shrewd iff, for all $P \subseteq V_\kappa$ and every formula $\varphi(x)$ (possibly using new predicates $\dot{P}$ and $\dot{A}$), if $\langle V_{\kappa+\eta}, \in, P, \mathcal{A} \cap V_{\kappa+\eta} \rangle \models \varphi(\kappa)$, then there exist $0 < \kappa_0, \eta_0 < \kappa$ so that $\langle V_{\kappa_0+\eta_0}, \in, P \cap V_{\kappa_0}, \mathcal{A} \cap V_{\kappa_0+\eta_0} \rangle \models \varphi(\kappa_0)$.
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\frametitle{Extra oracles for shrewdness...}
+We show later that stability with oracles may be considered as a recursive analogue of this version of shrewdness with oracles. For now, let us first give the promised characterisation of subtlety.
+
+\begin{block}{Theorem}
+A strongly inaccessible cardinal $\pi$ is subtle iff the following holds: for any $\mathcal{A} \subseteq V_\pi$, there are stationarily many $\kappa < \pi$ so that $\kappa$ is $\mathcal{A}$-$\eta$-shrewd for all $\eta < \pi$.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Recursive subtlety}
+This motivates the following definition:
+
+\begin{block}{Definition}
+$\rho$ is recursively subtle iff, for any $\rho$-recursively enumerable $\mathcal{A} \subseteq L_\rho$, $\rho$ is $\Pi_2$-reflecting onto the set of $\kappa < \rho$ which are $\mathcal{A}$-$\rho$-stable.
+\end{block}
+
+Our main theorem is that recursively subtle ordinals are precisely $\Sigma_2$-nonprojectible ordinals.
+\end{frame}
+
+\begin{frame}
+\frametitle{Nonprojectibility}
+\begin{block}{Theorem}
+Suppose $\beta < \omega_1^L$. Then the following are equivalent:
+
+\begin{itemize}
+    \item For all $\tau < \beta$, there is $\alpha < \beta$ so that $\tau < \alpha$ and $\alpha$ is $\beta$-$\Sigma_2$-stable.
+    \item The $\Sigma_2$-projectum $\rho_2^\beta$ is equal to $\beta$.
+    \item If $\mathcal{A} \subseteq \beta$ is $\Sigma_2(L_\beta)$ and $\sup(\mathcal{A}) < \beta$, then in fact $\mathcal{A} \in L_\beta$.
+\end{itemize}
+\end{block}
+
+\pause
+
+Any ordinal satisfying any of these equivalent conditions is called $\Sigma_2$-nonprojectible (due to condition 2), although only formulation 1 will be relevant for our purposes.
+\end{frame}
+
+\begin{frame}
+\frametitle{The crux of the proof}
+Our goal is so-called oracle elimination: the title of this section. Basically, we want to show that, in $\mathcal{A}$-$\xi$-stability, the additional oracle $\mathcal{A}$ is irrelevant given higher degrees of correctness: any $\xi$-$\Sigma_2$-stable ordinal is $\mathcal{A}$-$\xi$-stable. \pause We don't want to do this for all $\mathcal{A}$, only the $\xi$-recursively enumerable $\mathcal{A}$ (and a bit beyond, including the $\xi$-co-recursively enumerable sets). Without stringent conditions, full oracle elimination is certainly not possible.
+\end{frame}
+
+\begin{frame}
+\frametitle{Interpretability}
+\begin{block}{Definition}
+Let $\kappa, \rho$ be ordinals with $\kappa < \rho$. Then $\mathcal{A} \subseteq L_\kappa$ is called $(\kappa, \rho)$-interpretable iff, for any $\Sigma_2$ formula $\varphi$ and parameters $\vec{b} \in L_\kappa$ with $\mathcal{A} = \{x \in L_\kappa: L_\kappa \models \varphi(x, \vec{b})\}$, we have $\mathcal{A} = \mathcal{A}^{L_\rho} \cap L_\kappa$, where $\mathcal{A}^{L_\rho} = \{x \in L_\rho: L_\rho \models \varphi(x, \vec{b})\}$.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Global interpretability from stability}
+In other words, $\mathcal{A}$ is $(\kappa, \rho)$-interpretable iff it any $\Sigma_2$-definition gives a way of extending $\mathcal{A}$ to a ``fuller'' subset of $L_\rho$ without adding new elements of $L_\kappa$.
+
+\begin{block}{Lemma}
+Let $\kappa, \xi$ be ordinals so that $\xi > 0$. Then the following are equivalent:
+
+\begin{itemize}
+    \item $\kappa$ is $\xi$-$\Sigma_2$-stable.
+    \item Every subset of $L_\kappa$ is $(\kappa, \kappa+\xi)$-interpretable.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Oracle elimination}
+Using interpretability, you can derive $\Delta_2(\dot{A})$-preservation from $\Sigma_2$-preservation, i.e. oracle elimination:
+
+\begin{block}{Theorem}
+Let $\kappa, \xi$ be ordinals so that $\xi > 0$. Assume $\kappa$ is $\xi$-$\Sigma_2$-stable and $\mathcal{A} \subseteq L_{\kappa+\xi}$ is $\Delta_2$-definable in $L_{\kappa+\xi}$ with parameters from $L_\kappa$. Then $\kappa$ is $\mathcal{A}$-$\xi$-stable.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{How to proceed}
+Anyways, now we have the following: assume $\rho$ is $\Sigma_2$-nonprojectible. Recall characterisation 1 -- for all $\tau < \rho$, there is $\alpha < \rho$ so that $\tau < \alpha$ and $\alpha$ is $\rho$-$\Sigma_2$-stable. A relatively easy (yet surprising) reflection argument shows that, not only is $\beta$ a limit of $\beta$-$\Sigma_2$-stable ordinals, but actually $\beta$ is $\Pi_2$-reflecting on them. Therefore, for the conclusion that $\rho$ is  recursively subtle, it suffices to prove that a tail of $\rho$-stable ordinals are also $\mathcal{A}$-$\rho$-stable. And to do this, simply pick a $\rho$-stable ordinal $\kappa$ so that $\mathcal{A}$ is definable in $L_\rho$ with parameters from $L_\kappa$.
+\end{frame}
+
+\section{Measurable cardinals?}
+
+\begin{frame}
+\frametitle{Recursive measurability?}
+$\alpha$ is $\Sigma_2$-extendible iff there is $\beta > \alpha$ so that $\alpha$ is $\beta$-$\Sigma_2$-stable.
+
+The smallest $\Sigma_2$-extendible ordinal has a characterisation in terms of infinite-time computability, and arithmetical quasi-inductiveness. It was previously also believed that $\Sigma_2$-extendibility may serve as a recursive analogue of measurability.
+\end{frame}
+
+\begin{frame}
+\frametitle{Evidence?}
+Say $\alpha$ is recursively measurable iff there is a nonprincipal ultrafilter on the Boolean algebra of $\alpha$-recursive subsets of $\alpha$, which is closed under intersections of $< \alpha$ many sets, as long as this intersection can be coded in an $\alpha$-recursive way. Then $\alpha$ is recursively measurable iff it is $\Sigma_2$-extendible. \pause This assignment is however not ``consistent'' with our findings: any measurable cardinal is weakly compact and subtle, but:
+
+\begin{block}{Proposition}
+If $\alpha$ is $\Sigma_2$-extendible, it is $\Pi_3$-reflecting and nonprojectible, yet the least $\Sigma_2$-extendible ordinal is not $\Sigma_2$-nonprojectible.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Remark}
+Maybe this dissimilarity occurs because there can be no true recursive analogue of measurability. After all, a main application of recursive analogues is in ordinal analysis, which can be carried out absolutely and hence measurable cardinals will never be needed for it.
+\end{frame}
+
+\begin{frame}
+\frametitle{Thanks!}
+Thanks for listening!
+\end{frame}
+
+\end{document}
