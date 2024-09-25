@@ -20,7 +20,9 @@ I use Arch Linux with `i3wm` (X11) as my daily operating system.
 # Maths
 
 My ORCID is 0009-0003-8458-4700.
+
 My Erdős number is `NaN`: the only person who I've collaborated with has only collaborated with me.
+
 I'm the author of OEIS sequence A368423.
 
 Below are some small blogs or expositions I've put on my website:
@@ -85,7 +87,7 @@ I have not published any sets of notes regarding courses or particular topics.
 
 My languages of choice are Python, C++ and JavaScript. I also used to know C# and Go.
 
-For very low-level things, x64 assembly is my main tool, despite all of its flaws. I'm currently developing a RISC alternative to it.
+For very low-level things, x64 assembly is my main tool, despite all of its flaws.
 
 # Tarballs
 
@@ -126,4 +128,57 @@ edc4CPVpzqSQ7rOL
 -----END PUBLIC KEY-----
 ```
 
-Its SHA-256 fingerprint is `5d:56:2b:f7:2f:51:ba:30:1a:b2:6a:e2:65:33:15:ce:55:f5:1a:af:8e:f6:84:98:74:ac:24:13:29:61:0d:6f`. I didn't use the P-xxx curves out of distrust :P
+Its SHA-256 fingerprint is `5d:56:2b:f7:2f:51:ba:30:1a:b2:6a:e2:65:33:15:ce:55:f5:1a:af:8e:f6:84:98:74:ac:24:13:29:61:0d:6f`. I didn't use the P-xxx curves out of distrust :P 320 bits is a more secure key size anyways.
+
+The ECDSA key has been self-signed for 10 years - not valid after September 23, 2034:
+
+```
+-----BEGIN CERTIFICATE-----
+MIICazCCAgKgAwIBAgIUWvmAZt77A+B2E6zC0UpOA7U8rAgwCgYIKoZIzj0EAwIw
+ezELMAkGA1UEBhMCR0IxFTATBgNVBAoMDFVuYWZmaWxpYXRlZDEXMBUGA1UECwwO
+Tm90IEFwcGxpY2FibGUxHjAcBgNVBAMMFUpheWRlIFN5bHZpZSBNYXNzbWFubjEc
+MBoGCSqGSIb3DQEJARYNc3lsdmllQDgzYy5ubDAeFw0yNDA5MjUxMjUwMTRaFw0z
+NDA5MjMxMjUwMTRaMHsxCzAJBgNVBAYTAkdCMRUwEwYDVQQKDAxVbmFmZmlsaWF0
+ZWQxFzAVBgNVBAsMDk5vdCBBcHBsaWNhYmxlMR4wHAYDVQQDDBVKYXlkZSBTeWx2
+aWUgTWFzc21hbm4xHDAaBgkqhkiG9w0BCQEWDXN5bHZpZUA4M2MubmwwajAUBgcq
+hkjOPQIBBgkrJAMDAggBAQoDUgAEFZzk/eVbSjCQuiimtsMEijYnNingudgqGUNz
+8e+Ko8KPOAj0Qrdgc4rculT4qAA47CMmbnI4hYaqBm5sXxIA4XeHNKt51zgI9WnO
+pJDus4ujUzBRMB0GA1UdDgQWBBRW+W05Pr3pGoXTnGzsmyLFXk0hgDAfBgNVHSME
+GDAWgBRW+W05Pr3pGoXTnGzsmyLFXk0hgDAPBgNVHRMBAf8EBTADAQH/MAoGCCqG
+SM49BAMCA1cAMFQCKH0gMRFYbSe4J1ZeaYotApgRS4UJHKkbvTi+zmRDVR4rXrmy
+EksExRUCKCoa5VjwluJWkwdydN++1Q//JsRMNzrMuO2jTbVrCN3/O6NxZRvesJM=
+-----END CERTIFICATE-----
+```
+
+The RSA key has also been self-signed - same expiration date:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIE1zCCAz+gAwIBAgIUDyjWBScj+Lu9eJxCwr/r0nN3b2wwDQYJKoZIhvcNAQEL
+BQAwezELMAkGA1UEBhMCR0IxFTATBgNVBAoMDFVuYWZmaWxpYXRlZDEXMBUGA1UE
+CwwOTm90IEFwcGxpY2FibGUxHjAcBgNVBAMMFUpheWRlIFN5bHZpZSBNYXNzbWFu
+bjEcMBoGCSqGSIb3DQEJARYNc3lsdmllQDgzYy5ubDAeFw0yNDA5MjUxMjUxNTJa
+Fw0zNDA5MjMxMjUxNTJaMHsxCzAJBgNVBAYTAkdCMRUwEwYDVQQKDAxVbmFmZmls
+aWF0ZWQxFzAVBgNVBAsMDk5vdCBBcHBsaWNhYmxlMR4wHAYDVQQDDBVKYXlkZSBT
+eWx2aWUgTWFzc21hbm4xHDAaBgkqhkiG9w0BCQEWDXN5bHZpZUA4M2MubmwwggGi
+MA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQDg018cKu7Ov7yTvbtdmQ+APnx1
+vJ8m87W8V19EehuhdGDrcaamZ/iAo9IAN/wWxVx2kpotfxLMT1vmT32supWM8XNB
+3VO43Pe4z1pNj5hpYA4u06QyNQIrzBcVewWQefydT3EcbkOVaOPznFBbqPM9+DVh
+YXR3/2aoH3SCBEwpwjVCRqxLkabxHb9D3Qed8dDgP0hs7R6+xcKl5L79mIrwBQnh
+1KctmW/iRxd1TSaGgFVnjkENd9mxRJSX7O864m45/o/6iEsX0deEq10yYTktyd5l
+jppBMQIQSHElqyCpOkVexlhdJXscwwOqCK5GAJHtEhqEfuZzEOcvtzHG/l3cK4D3
+NG10gskzI129lIHmgRRAcUQUelBMD1TtOdG7Qqny+pAbIpXxG3PNRk0DxLYog/T3
+mCkM/eYImMFfQxlyLcjUn2/LRbWNdGV1kqQVzsTiXWaSLnqxXotDEowp4KJaGrVG
+vB1ZRmNAwB7AzzYyEh81ib3q2/uTipnlxe7cGzECAwEAAaNTMFEwHQYDVR0OBBYE
+FNvzxY/KTQ/hGcwL7CcEPHWk3jKDMB8GA1UdIwQYMBaAFNvzxY/KTQ/hGcwL7CcE
+PHWk3jKDMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggGBAJNMUwFo
+onzV9qsjskqsv1+FnVR3g8QDc7OQWmipRUqKiAMPh5p5jVu9ELs0kSSYA2IApLQI
+y7ShPNCsGUFbexSZleA6aJD9Go65wopV6J7w6Aoqvylov7YAky1QOBrTV1kpKf6W
+grObAXVs0pZyXmRbWxNG2UpTWB1+4vjbFNHTZeXTRS4fzyZQr1SuSgCz/Cs/cAAU
+FcQtuyxJT3As/W97GkGqxCij6caA68SE2oUQmPPp9KfaTO/pPlAtKTKol8sjgV7F
+EI9mjwQb0u7NeKFOSGD/bFtKKTLcQDcE1fajMVz1Y6af3bewcaYqcmxS9ipt3mv8
+PUNBsJyaiarUwLRAXu1b4u6M47tXQkHTB3xVIodx3Sh5zNJ1mkUfxgltv/hR9wTx
+HDIkqUfQEwSV4gSZVOpzNIXDpxZkBQwQLF6GVpF/m9Eef+zVg+7A454bRtsq6IcA
+5JaWlj5Whx2IKqRyEhAA48sjlxoTQMugy71m1ebOATZtZVCUEFLUPIlzsQ==
+-----END CERTIFICATE-----
+```
