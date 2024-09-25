@@ -15,6 +15,8 @@ My pronouns are she/her - but feel free to use they/them or neopronouns. As one 
 
 I live in the UK and speak English fluently, and I used to speak German natively. My Myers-Briggs personality type is INTP-T.
 
+I use Arch Linux with `i3wm` (X11) as my daily operating system.
+
 # Maths
 
 My ORCID is 0009-0003-8458-4700.
@@ -65,10 +67,6 @@ I have so far published 2 preprints. I shall keep a repository of all my papers,
 
 I have not published any sets of notes regarding courses or particular topics.
 
-## In preparation
-
-I'm preparing a couple of research articles and preprints, as well as a book or two teaching set theory and "pure apeirology" to beginners. Of course, I won't upload their PDF or TEX here yet, for reasons related to privacy and plagiarism.
-
 ## Talks
 
 - "Subtlety, interpretability and nonprojectibility" (contributed talk, European Set Theory Conference 2024)
@@ -98,44 +96,34 @@ Below are `.tar.gz` archives, for projects containing multiple files and a lot o
 
 # Contact
 
-You can reach me by email at sylvie at 83c dot nl. It's a redirect to my main email, which I'm probably not going to put online. I might just set up my own SMTP server at some point.
+You can reach me by email at sylvie at 83c dot nl. It's a redirect to my main email, which I'm probably not going to put online.
 
-In case you ever want to ensure nobody pries upon what you send to me or that I am really who I say I am, my public RSA key, in the OpenSSH format, is:
-
-```
------BEGIN RSA PUBLIC KEY-----
-AAAAB3NzaC1yc2EAAAEACN2CWkiMpSzGy6Fvrsy1GGF6DP9ENSNRTFJJMsoI+vOmrgiDazHdS73B7lZhIaQBGw2kEGj5FKdFJh3KujJ3xJHPsRwz4eRmQCuDWgqR/4yIriHwdW1BlnwZ6/iSHnngL/YPfYYvMuZk6NaOTnlSA4AqhtN0edVuTKs6Gd8wra+S7U606NidgGrgvvXdjHvGI1Ox2LkUMbdxj6+xOCKQJNHkVc+2R9lwHtIjTqWXh51Ra86QSNYRN8o6kzQ44PkFLrBTk28Lvjczr/sGQFjAnIne72AoxhwbyOsxaPNk5EOQc75qM2BjZwcqapxCR1UJHgBT88QqBXlW9L8OTEBMRwAAAQDe/QhAehlMqkpV+rymIiC7243acWQ9u3nt4r+2bC76cCi+RU02Qlh8yrfKRBrXjMRS+aTRz3sRQ7BBemv7wiQPaxfLNB7QSJ0zQVD/LBSnruoeXycYeZ12NAICHNkXPiikUkIx/PdMfaWs2SLqkUIhmU+Qd2a6vaSqAFbXbPgt+KFKJhArI5oOwU4rF/e6tefowK/xjtUwrEG5JYuYUJL4RgWwIF+UjpS9/NTcO9NpCHqbmiFQjCddB2QmrwKYBlX4los0KVbyBBY3vBY/BpNrNKT3zrAJ6oUM6sDs/tb/6mNx+L2RGoTv9Ws6I2/7kSZs6JSApdRHNb4wGhJBAFVv
------END RSA PUBLIC KEY-----
-```
-
-This has SHA-256 fingerprint `68:b7:d5:a7:57:23:40:c8:c3:3d:3e:81:65:40:df:f2:e1:26:8f:f4:0a:f5:cd:97:62:80:de:2d:29:e9:1c:84`.
-
-For example, encrypting "Hello, World!", without any padding, should produce
+If you want to ensure nobody pries upon what you send me, my RSA-3072 public key, generated with OpenSSL, is
 
 ```
------BEGIN RSA ENCRYPTED MESSAGE-----
-v/9XaZwBoFlqebzOIpxpIVdjzolIErGUgxvRnprkZjmvBuI+/ptXNIy3QSc+VjDKrDHbF8Vq2nLZ45xYLW4d2m9tgCxEWHRg93Vw5d2qx24m2I80h/OkJmlKlPOIgCCtAR322Iu4aOUJ7C/unTTH0CZTzIHaIkhLjTTxMKUunum/Th4MiU7iFVSVTA2bEJbcUri+fp3xUnt8u6OkwOBPTZULCdBXM8sl0zpVbGS3AnX1kxmEdhWpqqGBTDFObDyHBg1FBKXxALeyfkQaFcAFlMoVS2yQK0rmoEvDnqgO5m55J8KlUp40t4bLWHZY8e7RzJzjpHNPsYS38AIU88g8Xw==
------END RSA ENCRYPTED MESSAGE-----
+-----BEGIN PUBLIC KEY-----
+MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA4NNfHCruzr+8k727XZkP
+gD58dbyfJvO1vFdfRHoboXRg63Gmpmf4gKPSADf8FsVcdpKaLX8SzE9b5k99rLqV
+jPFzQd1TuNz3uM9aTY+YaWAOLtOkMjUCK8wXFXsFkHn8nU9xHG5DlWjj85xQW6jz
+Pfg1YWF0d/9mqB90ggRMKcI1QkasS5Gm8R2/Q90HnfHQ4D9IbO0evsXCpeS+/ZiK
+8AUJ4dSnLZlv4kcXdU0mhoBVZ45BDXfZsUSUl+zvOuJuOf6P+ohLF9HXhKtdMmE5
+LcneZY6aQTECEEhxJasgqTpFXsZYXSV7HMMDqgiuRgCR7RIahH7mcxDnL7cxxv5d
+3CuA9zRtdILJMyNdvZSB5oEUQHFEFHpQTA9U7TnRu0Kp8vqQGyKV8RtzzUZNA8S2
+KIP095gpDP3mCJjBX0MZci3I1J9vy0W1jXRldZKkFc7E4l1mki56sV6LQxKMKeCi
+Whq1RrwdWUZjQMAewM82MhIfNYm96tv7k4qZ5cXu3BsxAgMBAAE=
+-----END PUBLIC KEY-----
 ```
 
-Similarly, encrypting the random sequence of Kangxi radicals `⼅⼓⼼⽿⽆⼮⿎⽷⽗⾘⿎⽦⿈⽻⾘⼂⼪⾕⿇⼸⾟⽎⾤⽒⾫⽽⿄⽟⾳⼺⽵⽟⽋⽻⾅⼑⾝⾣⾍⾾⾽⾒⽅⿎⾪⽮⽠⼧⾈⼔⼛⿄⼏⿁⾬⽝⽘⿓⿏⾌⼻⿒⼀⾀⽨⾔⼤⼵⽙⼽⽱⽞⾂⼇⾇⽂⼠⾏⿓⼽⽺⾦⾵⽤⽐⾯⾿⾜⽂⼷⽇⽈⾛⽒⿏⽍⽸⽏⼖⼵`, with UTF-8 encoding (a significantly more daunting task) produces
+Its SHA-256 fingerprint is `fa:e6:7a:61:23:98:fc:4a:90:82:6a:14:cd:bd:f8:be:c9:3a:76:af:3a:de:16:12:97:6e:93:1c:d5:8e:ab:36`.
+
+And if you want to ensure I am who I say I am, you can request a digital signature; my ECDSA-320 public key, also generated with OpenSSL, is:
 
 ```
------BEGIN RSA ENCRYPTED MESSAGE-----
-b+vQTDe85Fh8anZCvr45ArD4NIvZJ8c40OdbLTUxmgbbdtI72hnUDhLIjiddwZFVnGvPmwViZw2ePFx9vExu9MBoDnhriIKFclhnIzIrYnpFvic7y5wPFZUahbGhP6Bc5fLEeDYJ38MNH/PZgwtPA4/KrgJvwQjlq2XOeWhECCeVnIqvpWUiCh4Oq7ieaV8ew1V/2HHPPAKZW7bEXq5XT3+vNIRagOPexPeZzqccowkUX1N22WSWv70EztVi1pVohVdFE54z+eIHCULHdt2yXxYs7zx+DbdA+Cn31AnfHji8+Biaeathia6g+3mcSr40Tb1O8cqLN18kxxTcg+NEiQ==
------END RSA ENCRYPTED MESSAGE-----
+-----BEGIN PUBLIC KEY-----
+MGowFAYHKoZIzj0CAQYJKyQDAwIIAQEKA1IABBWc5P3lW0owkLooprbDBIo2JzYp
+4LnYKhlDc/HviqPCjzgI9EK3YHOK3LpU+KgAOOwjJm5yOIWGqgZubF8SAOF3hzSr
+edc4CPVpzqSQ7rOL
+-----END PUBLIC KEY-----
 ```
 
-And, lastly,
-
-```
------BEGIN RSA SIGNED MESSAGE-----
-00111222333444555666777
------END RSA SIGNED MESSAGE-----
-
------BEGIN RSA SIGNATURE-----
-PUxMC9yw54rnNSDPeo8rkPCR47kR8QLZd5ry0YMqHwW3iM1KT6qFeRSOnQWdgY7roICJ7eVuS2AHDxkoVyXqfg4n2ieJsji2cejqkodIJDAKAUG3NrPjHLxIP2oin02FTFYDA1ZUS3WGUZWEDqKZbNa7ySDhrbtWZiTArvM0JleJeFXv9Dc04anA+Tje912Pi6s5mZUCEf6FYeGUwYxinBPDW2WhTPDgiLr1zGnL2iEpYqcQffPtk59OPZQ0eHl6+5Q3kHKG1Rb9evDeLXjXKvFBV85bkvgMgeLSAh5JOpzQZ2szbjyj70w4SRP9BtaG9UnHjeE/AhVuCMUC/+GBiA==
------END RSA SIGNATURE-----
-```
-
-should check out as validly signed (with BLAKE2b hash and PKCS #1 padding). These RSA standards are a mess to work out! So it might not work for you. I know this is all probably excessive.
+Its SHA-256 fingerprint is `5d:56:2b:f7:2f:51:ba:30:1a:b2:6a:e2:65:33:15:ce:55:f5:1a:af:8e:f6:84:98:74:ac:24:13:29:61:0d:6f`. I didn't use the P-xxx curves out of distrust :P
