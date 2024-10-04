@@ -114,9 +114,9 @@ LcneZY6aQTECEEhxJasgqTpFXsZYXSV7HMMDqgiuRgCR7RIahH7mcxDnL7cxxv5d
 KIP095gpDP3mCJjBX0MZci3I1J9vy0W1jXRldZKkFc7E4l1mki56sV6LQxKMKeCi
 Whq1RrwdWUZjQMAewM82MhIfNYm96tv7k4qZ5cXu3BsxAgMBAAE=
 -----END PUBLIC KEY-----
-```
 
-Its SHA-256 fingerprint is `fa:e6:7a:61:23:98:fc:4a:90:82:6a:14:cd:bd:f8:be:c9:3a:76:af:3a:de:16:12:97:6e:93:1c:d5:8e:ab:36`.
+Fingerprint (SHA-256): fa:e6:7a:61:23:98:fc:4a:90:82:6a:14:cd:bd:f8:be:c9:3a:76:af:3a:de:16:12:97:6e:93:1c:d5:8e:ab:36
+```
 
 And if you want to ensure I am who I say I am, you can request a digital signature; my ECDSA-320 public key, also generated with OpenSSL, is:
 
@@ -126,9 +126,11 @@ MGowFAYHKoZIzj0CAQYJKyQDAwIIAQEKA1IABBWc5P3lW0owkLooprbDBIo2JzYp
 4LnYKhlDc/HviqPCjzgI9EK3YHOK3LpU+KgAOOwjJm5yOIWGqgZubF8SAOF3hzSr
 edc4CPVpzqSQ7rOL
 -----END PUBLIC KEY-----
+
+Fingerprint (SHA-256): 5d:56:2b:f7:2f:51:ba:30:1a:b2:6a:e2:65:33:15:ce:55:f5:1a:af:8e:f6:84:98:74:ac:24:13:29:61:0d:6f
 ```
 
-Its SHA-256 fingerprint is `5d:56:2b:f7:2f:51:ba:30:1a:b2:6a:e2:65:33:15:ce:55:f5:1a:af:8e:f6:84:98:74:ac:24:13:29:61:0d:6f`. I didn't use the P-xxx curves out of distrust :P 320 bits is a more secure key size anyways.
+I didn't use the P-xxx curves out of distrust :P 320 bits is a more secure key size anyways (and 521 is overkill).
 
 The ECDSA key has been self-signed for 10 years - not valid after September 23, 2034:
 
