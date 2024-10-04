@@ -184,3 +184,11 @@ HDIkqUfQEwSV4gSZVOpzNIXDpxZkBQwQLF6GVpF/m9Eef+zVg+7A454bRtsq6IcA
 5JaWlj5Whx2IKqRyEhAA48sjlxoTQMugy71m1ebOATZtZVCUEFLUPIlzsQ==
 -----END CERTIFICATE-----
 ```
+
+# Donations & politics
+
+<div align="center">
+<a href="https://www.defectivebydesign.org/">
+<img src="https://www.defectivebydesign.org/sites/nodrm.civicactions.net/files/images/fsf_DBD_468x60.png" alt="Fight DRM, Join the Free Software Foundation" width="468" height="60" border="0" align="middle" />
+</a>
+</div>
