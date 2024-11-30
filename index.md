@@ -28,10 +28,12 @@ I'm the author of OEIS sequence A368423.
 Below are some small blogs or expositions I've put on my website:
 
 - [Binary WHILE](blog/BW.md).
+- [The SIMD XOR Bit Generator](blog/SXBG.md).
 
 I've attended the following conferences:
 
 - European Set Theory Conference 2024
+- Set Theory in the UK 14
 
 ## My research interests
 
