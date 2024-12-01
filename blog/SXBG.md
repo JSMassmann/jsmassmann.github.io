@@ -11,7 +11,7 @@ next2 = {0x2c, 0x31, 0x0e, 0xae, 0x0c, 0x86, 0xb5, 0x0d, 0x03, 0x58, 0x22, 0x9f,
 
 These values were simply chosen from a source of hardware entropy - `/dev/urandom` - and an implementer may change them if they wish.
 
-Additionally, the following constant vector is used to "mix in" randomness. I challenge the reader to figure out how it was calculated - I doubt it will ever be found. Again, an implementer may change it if they wish:
+Additionally, the following constant vector is used to "mix in" randomness. I challenge the reader to figure out how it was calculated (it is not truly random) - I doubt it will ever be found. Again, an implementer may change it if they wish:
 
 ```
 global_rand = {0x5c, 0x3f, 0x6e, 0x3f, 0x09, 0x81, 0xee, 0xda, 0xf5, 0xe3, 0x8e, 0x81, 0xd4, 0x59, 0x59, 0x62}
@@ -36,9 +36,9 @@ For example, the first value generated will be `0x9fa2ff1c`:
 
 The next three values computed are:
 
-- `0x004e1bdd ^ 0x6c0217b9 ^ 0xf40ea9e6 = 0x9842a582`.
-- `0x36010bdc ^ 0xf40ea9e6 ^ 0xe679be3d = 0x24761c07`.
-- `0xfa0754f3 ^ 0xe679be3d ^ 0x009c37bb = 0x1ce2dd75`.
+- `0x804e1bdd ^ 0x6c0217b9 ^ 0xf40ea9e6 = 0x1842a582`.
+- `0xb6010bdc ^ 0xf40ea9e6 ^ 0xe679be3d = 0xa4761c07`.
+- `0x7a0754f3 ^ 0xe679be3d ^ 0x009c37bb = 0x9ce2dd75`.
 
 After which `global_rand` is added again.
 
@@ -66,7 +66,7 @@ p-value of Statistic C                :    0.75
 Version:               TestU01 1.2.3
 Generator:             sxbg
 Number of statistics:  15
-Total CPU time:        00:00:03.87
+Total CPU time:        00:00:03.85
 
 All tests were passed
 ```
@@ -74,17 +74,19 @@ All tests were passed
 Below are the LinearComp logs, with sample sizes up to 1,000,000 (whereas the Mersenne Twister reaches p > 0.99 at sample size 50,000):
 
 ```
-p-values of n = 250                    :    0.80, 0.69
-p-values of n = 500                    :    0.89, 0.79
-p-values of n = 1000                   :    0.74, 0.25
-p-values of n - 5000                   :    0.19, 0.97 [ Significant ]
-p-values of n = 25000                  :    0.31, 0.18
-p-values of n = 50000                  :    0.70, 0.20
-p-values of n = 75000                  :    0.58, 0.43
-p-values of n = 100000                 :    0.71, 0.21
-p-values of n = 200000                 :    0.68, 0.72
-p-values of n = 500000                 :    0.46, 0.31
-p-values of n = 1000000                :    0.63, 0.69
+p-values of n = 250                    :    1-eps1, 0.05 *
+p-values of n = 500                    :    0.27,   0.66
+p-values of n = 1000                   :    0.82,   0.08
+p-values of n - 5000                   :    0.40,   0.96 [ Significant ]
+p-values of n = 25000                  :    0.13,   0.17
+p-values of n = 50000                  :    0.42,   0.32
+p-values of n = 75000                  :    0.74,   0.53
+p-values of n = 100000                 :    0.16,   0.95
+p-values of n = 200000                 :    0.55,   0.02 [ Significant ]
+p-values of n = 500000                 :    0.85,   0.64
+p-values of n = 1000000                :    0.53,   0.28
+
+* While this is technically a failure, it is completely exonerated by larger n.
 ```
 
 Furthermore, logs from the entropy measuring tool `ent` on a 32 MiB sample give the following results:
@@ -92,10 +94,10 @@ Furthermore, logs from the entropy measuring tool `ent` on a 32 MiB sample give 
 ```
 Entropy = 7.999994 bits per byte.
 Optimum compression would reduce the size of this 33554432 byte file by 0 percent.
-Chi square distribution for 33554432 samples is 282.47, and randomly would exceed this value 11.42 percent of the times.
-Arithmetic mean value of data bytes is 127.5030 (127.5 = random).
-Monte Carlo value for Pi is 3.141228863 (error 0.01 percent).
-Serial correlation coefficient is -0.000148 (totally uncorrelated = 0.0).
+Chi square distribution for 33554432 samples is 256.22, and randomly would exceed this value 46.68 percent of the times.
+Arithmetic mean value of data bytes is 127.5029 (127.5 = random).
+Monte Carlo value for Pi is 3.141550013 (error 0.00 percent).
+Serial correlation coefficient is -0.000233 (totally uncorrelated = 0.0).
 ```
 
 with the cryptographically secure, hardware-seeded `/dev/urandom` for comparison:
@@ -109,19 +111,23 @@ Monte Carlo value for Pi is 3.142471262 (error 0.03 percent).
 Serial correlation coefficient is -0.000088 (totally uncorrelated = 0.0).
 ```
 
+Below is a randogram of SXBG, with true randomness, PCG-RS, PCG-RXS-M-XS, the Mersenne Twister, XorShift32, a 32-bit LCG (minstd), and an A5/1-based LFSR for comparison. Almost all, except for the terribly-designed minstd, look similar, but the randograms are in 800 x 800 resolution, so you can zoom in.
+
+![Randograms for true randomness, SXBG, PCG-RS, PCG-RXS-M-XS, MT, XorShift32, minstd and A5/1.](randograms.png "Randograms")
+
 Lastly, regarding performance, the following statistics were obtained on an Intel i3-1215U, utilizing a single core, clocked at 4.4 GHz, with 12 GiB memory:
 
 ```
+Testing speed...
 
-1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.198622 seconds.
-1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.257124 seconds.
-1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.220668 seconds.
-1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.224230 seconds.
-
-Overall, 4294967295 calls to sxbg - 16 GiB random data generated - succeeded in 8.900644 seconds, including printf and clock_gettime overhead.
+1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.214285 seconds.
+1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.116545 seconds.
+1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.216574 seconds.
+1073741824 calls to sxbg - 4 GiB random data generated - succeeded in 2.197781 seconds.
+Overall, 4294967295 calls to sxbg - 16 GiB random data generated - succeeded in 8.745185 seconds, including printf and clock_gettime overhead.
 ```
 
-These give measurements of an average cpb of 2.27957694, for an implementation (provided at the bottom of the page) compiled with `gcc -O3`.
+These give measurements of an average cpb of 2.23976176, for an implementation (provided at the bottom of the page) compiled with `gcc -O3`.
 
 I hope you enjoyed this blog post, and might consider using SXBG! When unpredictability *really* is important, I wouldn't advise it; it fails 28/144 tests of the more exhaustive Crunch from TestU01. But I'm quite proud of the performance. Below is my simple implementation, in ANSI C with GNU extensions:
 
@@ -135,8 +141,8 @@ typedef uint8_t m128 __attribute__ ((vector_size (16)));
 
 #define TO32B(x,i) (((x)[i] << 24) + ((x)[i+1] << 16) + ((x)[i+2] << 8) + ((x)[i+3]))
 
-uint64_t ror(const uint64_t value, const uint8_t shift) {
-  return (value >> shift) | (value << (64 - shift));
+uint32_t ror(const uint32_t value, const uint8_t shift) {
+  return (value >> shift) | (value << (32 - shift));
 }
 
 m128 global_rand    = {0x5c, 0x3f, 0x6e, 0x3f, 0x09, 0x81, 0xee, 0xda, 0xf5, 0xe3, 0x8e, 0x81, 0xd4, 0x59, 0x59, 0x62};

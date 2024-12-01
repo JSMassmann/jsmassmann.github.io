@@ -1,5 +1,4 @@
-You can reach me by email at sylvie at 83c dot nl. It's a redirect to my main email, which I'm probably not going to put online.
-Thanks to Lance B for sorting that out.
+You can reach me by email at sylvie at 83c dot nl. It's a redirect to my main email, which I'm probably not going to put online. Thanks to Lance B for sorting that out.
 
 When you contact me, please don't hesitate to encrypt your communications;  my RSA-3072 public key, generated with OpenSSL, is
 

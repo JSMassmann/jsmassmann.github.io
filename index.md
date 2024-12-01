@@ -21,7 +21,7 @@ I use Arch Linux with `i3wm` (X11) as my daily operating system. I try not to be
 
 My ORCID is 0009-0003-8458-4700.
 
-My Erdős number is `NaN`: the only person who I've collaborated with has only collaborated with me.
+My Erdős number is `NaN`: the only person who I've formally collaborated with has only collaborated with me.
 
 I'm the author of OEIS sequence A368423.
 
@@ -37,7 +37,7 @@ I've attended the following conferences:
 
 ## My research interests
 
-I like proof theory, large cardinals, inner model theory, recursion theory and cryptography. For some of these my knowledge isn't as good as it can be, but I'm currently not focusing that much on learning new things.
+I like, in maths, proof theory, large cardinals, inner model theory, recursion theory, and in computer science, cryptography and operating systems development.
 
 ## My preprints and notes
 
@@ -89,9 +89,9 @@ I have not published any sets of notes regarding courses or particular topics.
 
 # Programming
 
-My languages of choice are Python, C++ and JavaScript. I also used to know C# and Go.
+My favourite language is C, due to its simplicity and versatility. I used to use C++, but switched after realizing OOP is slow and provides no significant simplifications or improvements. For simple scripting, I like Python. I know a small amount of C#, Go and JavaScript.
 
-For very low-level things, x64 assembly is my main tool, despite all of its flaws.
+For very low-level things, x64 assembly is my main tool, despite all of the architecture's flaws.
 
 # Tarballs
 
