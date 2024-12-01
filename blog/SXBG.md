@@ -129,7 +129,9 @@ Overall, 4294967295 calls to sxbg - 16 GiB random data generated - succeeded in 
 
 These give measurements of an average cpb of 2.23976176, for an implementation (provided at the bottom of the page) compiled with `gcc -O3`.
 
-I hope you enjoyed this blog post, and might consider using SXBG! When unpredictability *really* is important, I wouldn't advise it; it fails 28/144 tests of the more exhaustive Crunch from TestU01. But I'm quite proud of the performance. Below is my simple implementation, in ANSI C with GNU extensions:
+I hope you enjoyed this blog post, and might consider using SXBG! When unpredictability *really* is important (but you don't want to use something cryptographic), I wouldn't advise it; it fails 28/144 tests (1 to *too* much uniformity) of the more exhaustive Crunch from TestU01, and 83/160 (6 to *too* much uniformity) from BigCrunch. But I'm quite proud of the performance and linear complexity.
+
+Below is my simple implementation, in ANSI C with GNU extensions:
 
 ```
 #include <stdint.h>
