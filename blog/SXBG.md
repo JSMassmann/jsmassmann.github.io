@@ -113,7 +113,7 @@ Serial correlation coefficient is -0.000088 (totally uncorrelated = 0.0).
 
 Below is a randogram of SXBG, with true randomness, PCG-RS, PCG-RXS-M-XS, the Mersenne Twister, XorShift32, a 32-bit LCG (minstd), and an A5/1-based LFSR for comparison. Almost all, except for the terribly-designed minstd, look similar, but the randograms are in 800 x 800 resolution, so you can zoom in.
 
-![Randograms for true randomness, SXBG, PCG-RS, PCG-RXS-M-XS, MT, XorShift32, minstd and A5/1.](randograms.png "Randograms")
+![Randograms for true randomness, SXBG, PCG-RS, PCG-RXS-M-XS, MT, XorShift32, minstd and A5/1.](randograms.jpg "Randograms")
 
 Lastly, regarding performance, the following statistics were obtained on an Intel i3-1215U, utilizing a single core, clocked at 4.4 GHz, with 12 GiB memory:
 
