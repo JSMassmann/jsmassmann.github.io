@@ -75,7 +75,7 @@ I have not published any sets of notes regarding courses or particular topics.
 
 ## Talks
 
-- "Subtlety, interpretability and nonprojectibility" (contributed talk, European Set Theory Conference 2024)
+- "Stability, interpretability and nonprojectibility" (contributed talk, European Set Theory Conference 2024)
   - [PDF](slides/RecSub/Slides.pdf)
   - [TEX](slides/RecSub/main.tex)
   - <a data-toggle="collapse" href="#collapseAbstract3" role="button" aria-expanded="false" aria-controls="collapseAbstract3">Abstract</a>
