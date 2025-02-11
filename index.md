@@ -106,8 +106,6 @@ See [contact](contact.md).
 
 # Buttons
 
-Tangentially related: see [politics](politics.md).
-
 <div align="center">
 <a href="https://www.fsf.org/">
 <img src="https://static.fsf.org/nosvn/associate/crm/6777766.png" alt = "Member of the Free Software Foundation since October 2024" width="180" height="45" border="0" align="middle" />
