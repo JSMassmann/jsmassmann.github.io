@@ -23,7 +23,7 @@ My ORCID is 0009-0003-8458-4700.
 
 My Erdős number is `NaN`: the only person who I've formally collaborated with has only collaborated with me.
 
-I'm the author of OEIS sequence A368423.
+I'm the author of OEIS sequences A368423 and A383237.
 
 Below are some small blogs or expositions I've put on my website:
 
