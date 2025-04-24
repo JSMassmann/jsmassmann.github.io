@@ -33,7 +33,7 @@ Below are some small blogs or expositions I've put on my website:
 I've attended the following conferences:
 
 - European Set Theory Conference 2024
-- Set Theory in the UK 14
+- Set Theory in the UK 14 & 15
 
 ## My research interests
 
