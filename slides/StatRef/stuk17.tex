@@ -1,0 +1,214 @@
+\documentclass{beamer}
+\usepackage{allrunes}
+
+\newcommand{\cof}{\operatorname{cof}}
+\newcommand{\fehu}{\textarc{F}\!}
+\newcommand{\NS}{\operatorname{NS}}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+%Information to be included in the title page:
+\title{$\mathcal{P}(\kappa)/\NS_\kappa$ and Stationary Reflection}
+\author{Jayde Massmann}
+\date{STUK 17 \\ 2025-11-05}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\usepackage{tikz}
+\usetheme{Copenhagen}
+\usecolortheme{default}
+
+\usepackage{parskip}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Large cardinals}
+It is human nature to want to go higher and higher. This leads to the large cardinal hierarchy, which seems to be a \alert{well-ordered} measuring stick for all possibly consistency strengths. \pause One can draw a line, below which the properties generally relativize to $L$, above which the properties imply $L$ gets cardinals and cofinalities vastly wrong. This has been formulated as a sharp \alert{dichotomy} by Jensen, using ``$0^\sharp$''. \pause
+
+\begin{itemize}
+\item Inaccessible, Mahlo, weakly compact, subtle, ineffable (comfortably compatible with $V = L$) \pause
+\item Measurable, strong, Woodin, superstrong (suddenly, $L$ must be far from $V$) \pause
+\item Supercompact, huge, Reinhardt (we have no good theory of the universe's ``fine structure'' here)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Where do we want to focus?}
+That depends on what you want. Lots of interesting combinatorial hypotheses (e.g. forcing axioms) require corresponding large cardinal hypotheses beyond $0^\sharp$ to justify their consistency. \pause
+
+However, today I'm really interested in what goes down at the lower levels: around a \alert{weakly compact} cardinal, at most an \alert{ineffable}.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Nonstationary Algebra}
+Let $\NS_\kappa \subseteq \mathcal{P}(\kappa)$ be the ideal of nonstationary subsets of $\kappa$ - i.e. those disjoint from some closed unbounded set. $\mathcal{P}(\kappa)/\NS_\kappa$ consists of equivalence classes under $X \sim Y$ iff $X \triangle Y \in \NS_\kappa$. $[X] \leq [Y]$ iff $X \setminus Y \in \NS_\kappa$. \pause
+
+\begin{itemize}
+\item The bottom element, $\mathbf{0} = [\emptyset] = \NS_\kappa$ is the nonstationary ideal.
+\item The top element, $\mathbf{1} = [\kappa] = \NS_\kappa^*$ is the club filter.
+\item Equivalence classes inbetween consist solely of stationary, costationary sets (not disjoint from any club but don't contain one either).
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Antichains}
+Recall a (strong) antichain in a BA is a set of pairwise incompatible elements, where $x$, $y$ are \emph{incompatible} if $x \land y = \mathbf{0}$, ignoring $x, y = \mathbf{0}$.
+
+\begin{block}{Theorem}
+(Solovay) For any stationary $S \subseteq \kappa$, there is a family $\{X_\alpha: \alpha < \kappa\} \subseteq \mathcal{P}(S)$ so that $X_\alpha$ is stationary and $X_\alpha \cap X_\beta = \emptyset$ for $\alpha \neq \emptyset$; in particular $\mathcal{P}(\kappa)/\NS_\kappa$ has size-$\kappa$ antichains below every nonzero element.
+\end{block}
+\pause
+\begin{block}{Question}
+Does $\mathcal{P}(\kappa)/\NS_\kappa$ have size-$\kappa^+$ antichains?
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Yes, usually}
+\begin{block}{Theorem}
+(Shelah, Gitik-Shelah) Consistently no, for $\kappa = \omega_1$, relative to strong large cardinals (Woodin cardinals). Provably yes for $\kappa > \omega_1$.
+\end{block}
+\pause
+$V = L$ implies yes for $\kappa = \omega_1$ too, since it implies a strong form of CH, $\lozenge$. Whether CH is enough is \alert{open}. Notice that $\mathcal{P}(\kappa)/\NS_\kappa$ has a size-$\lambda$ antichain if it has a length-$\lambda$ descending chain. \pause
+
+The items of a descending chain get ``thinner'' as time goes on, so there being a long one while everything remains stationary is indicative of $\kappa$ being ``large''. Indeed, the first proof that $\NS_\kappa$ must fail to be ``$\kappa^+$-saturated'' (Baumgartner-Taylor-Wagon) is when $\kappa$ is ``\alert{greatly Mahlo}'', which follows from weak compactness.
+\end{frame}
+
+\section{The Mahlo Order}
+
+\begin{frame}
+\frametitle{Stationary reflection}
+However, $[X_\beta] \leq [X_\alpha]$, $X_\beta \not \sim X_\alpha$ isn't ``strong enough'' for purposes of actually \alert{defining} large cardinals, which is what I'm interested in here.
+
+\begin{block}{Definition}
+An $X \notin \NS_\kappa$ \emph{reflects} if $X \cap \alpha \notin \NS_\alpha$ for some $\alpha < \kappa$. It reflects stationarily often if $\Tr(X) = \{\alpha < \kappa: X \cap \alpha \notin \NS_\alpha\} \notin \NS_\kappa$.
+\end{block}
+
+Clearly, $X \subseteq \kappa^+$ cannot reflect if it consists entirely of cofinality-$\kappa$ ordinals ($X \subseteq S_\kappa^{\kappa^+}$). Generally, $\Tr(X)$ is a lot thinner than $X$. \pause
+
+\begin{block}{Theorem}
+(Folklore) The statement ``every stationary $S \subseteq S_\omega^{\omega_2}$ reflects'' is equiconsistent with a Mahlo cardinal.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Stationary reflection at limit cardinals}
+Another interesting result \textit{re} large cardinals:
+
+\begin{block}{Theorem}
+(Jensen, Kunen) If $V = L$, $\kappa$ is weakly compact iff every stationary subset of $\kappa$ reflects. The converse can fail if $V \neq L$ (even if $V = L[A]$ for $A \subseteq \kappa$).
+\end{block}
+\pause
+\textit{A priori}, there is no reason for $\kappa$ to be more than $\omega$-Mahlo when every stationary subset of $\kappa$ reflects, where $\kappa$ is $0$-Mahlo (Mahlo) if the set of regular cardinals below is stationary, and $\kappa$ is $\alpha + 1$-Mahlo if the set of $\alpha$-Mahlo cardinals below is stationary. Take conjunctions at limit $\alpha$.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Mahlo order}
+Indeed, $\omega$-Mahloness is optimal, by forcing to ``kill'' $\{\alpha < \kappa: \alpha \text{ is } \omega \text{-Mahlo}\}$ while preserving ``every stationary subset reflects'' (this is folklore, but this is not how Kunen's original proof went). Weakly compact cardinals are $\kappa$-Mahlo and more.
+
+Now put $X < Y$ iff $X$, $Y$ are stationary and $[Y] \leq [\Tr(X)]$. Notice the order is reversed, so any club is now the least element, not the greatest. \pause Surprisingly:
+
+\begin{block}{Theorem}
+(Jech) $<$ is well-founded.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example}
+$$S_\omega^\kappa < S_{\omega_1}^\kappa < S_{\omega_2}^\kappa < \cdots < \{\alpha < \kappa: \cof(\alpha) = \alpha\}$$
+$$< \{\alpha < \kappa: \alpha \text{ is Mahlo}\} < \cdots < \{\alpha < \kappa: \alpha \text{ is } \alpha \text{-Mahlo}\} < \cdots$$
+\begin{itemize}
+\item $o(\aleph_{\alpha+1}) = \alpha + 1$. \pause
+\item $o(\kappa) \geq \kappa$ iff $\kappa$ is (weakly) inaccessible.
+\item $o(\kappa) > \kappa$ iff $\kappa$ is Mahlo. \pause
+\item At $\kappa \cdot \omega$, we ``catch up'' with if we only allow regular reflection points, which would make $S_\mu^\kappa$ have rank 0 for all fixed $\mu < \kappa$.
+\end{itemize}
+\end{frame}
+
+\section{Forcing}
+
+\begin{frame}
+\frametitle{Weakly compact cardinals}
+Clearly, $o(\kappa) < (2^\kappa)^+$. Recall that if $\kappa$ is weakly compact then $\kappa$ is $\kappa$-Mahlo, so $o(\kappa) \geq \kappa \cdot 2$. In fact, $o(\kappa) > \kappa^+$. So, if $2^\kappa = \kappa^+$, we're in the awkward position:
+
+$$\kappa^+ < o(\kappa) < \kappa^{++}$$
+\pause
+Meanwhile, if $2^\kappa > \kappa^{++}$, can we have e.g. $o(\kappa) = \kappa^{++}$ or $o(\kappa) > \kappa^{++}$? Test question:
+
+\begin{block}{Question}
+If $\kappa$ is weakly compact, must there be a forcing extension with $o(\kappa) \geq \kappa^{++}$, all cardinals preserved, and the continuum function untouched except at $\kappa$?
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Club Domination Order}
+For $f, g: \kappa \to \kappa$, $f \leq^* g$ iff $\{\alpha < \kappa: f(\alpha) \leq g(\alpha)\}$ contains a club. If $\cof(\kappa) > \omega$ then this is a well-founded partial order, by countable completeness of the club filter. Let $\fehu(\kappa)$ denote its height. Clearly, $\cof(\fehu(\kappa)) > \kappa$ and $\fehu(\kappa) < (2^\kappa)^+$. \pause
+
+\begin{itemize}
+\item (Donder-Levinski) \textit{Weak Chang's Conjecture}, aka \textit{Club Bounding}: $\fehu(\omega_1) = \omega_2$. This is slightly below an $\omega_1$-Erdős -- between an ineffable and a measurable -- in consistency strength.
+\item (Donder-Koepke) For $\kappa > \omega_1$, $\fehu(\kappa) = \kappa^+$ implies $0^\dagger$ (zero-dagger, between a measurable and two measurables in consistency strength) exists. No upper bound is known, to my knowledge.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Better Bounds on a Weakly Compact Cardinal's Mahlo Rank}
+The observation of a weakly compact cardinal's Mahlo rank and these facts about $\fehu$ leads to a natural conjecture.
+
+\begin{block}{Conjecture}
+If $\kappa$ is weakly compact, then $o(\kappa) \geq \fehu(\kappa)$.
+\end{block}
+
+The natural way to go about this is a transfinite recursion, translating a $\leq^*$-increasing chain of functions into a $<$-increasing chain of stationary sets. But I haven't gone through the details yet.
+\end{frame}
+
+\begin{frame}
+\frametitle{Forcing}
+Observe that it's quite easy to change $\fehu(\kappa)$ by forcing. Specifically, $\kappa$-Hechler forcing can be iterated with $< \kappa$-support for $\gamma$ stages to make $\fehu(\kappa)^{V[G]} \geq \fehu(\kappa)^V + \gamma$ (in fact $\fehu(\kappa)^{V[G]} \geq \fehu(\kappa)^V \cdot (1 + \gamma)$ and much more) while preserving all cardinals and cofinalities (note that the $\kappa^+$-cc alone isn't necessarily preserved in infinite-support iterations, we need a form of centeredness).
+\end{frame}
+
+\begin{frame}
+\frametitle{Killing Weak Compactness}
+
+When trying to build a model with large $o(\kappa)$ or $\fehu(\kappa)$, it seems possible that $\kappa$ loses its weak compactness, making it uninteresting in the extension. Some preparations exist to remedy this:
+\pause
+\begin{itemize}
+\item (Laver) If $\kappa$ is supercompact, there is a $\kappa$-cc forcing notion preserving $\kappa$'s supercompactness so that, in the extension, any further $< \kappa$-directed forcing preserves $\kappa$'s supercompactness. But supercompactness feels overkill. \pause
+\item (Folklore) If e.g. $V = L$, $\mathrm{Add}(\kappa, \kappa^{++})$ kills $\kappa$'s weak compactness. You can remedy this by first forcing with the Easton iteration of $\mathrm{Add}(\lambda, \lambda^{++})$ for all inaccessible $\lambda < \kappa$. \pause
+\item (Hamkins) In fact, it is possible to arrange for a cardinal's weak compactness to be killed by \alert{any} $< \kappa$-closed forcing, the antithesis to Laver's result.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{An Altered Test Question}
+I'm not sure what preparation to use when trying to increase $o(\kappa)$, $\fehu(\kappa)$ by forcing. \\
+
+The test question becomes interesting if we stipulate that you can't increase $\fehu(\kappa)$ while trying to increase $o(\kappa)$, e.g. starting with $\kappa^+ < \fehu(\kappa) \leq o(\kappa) < \kappa^{++}$ and then obtaining $\kappa^+ < \fehu(\kappa) < \kappa^{++} \leq o(\kappa)$. \pause A natural way of adding thin -- thus high Mahlo rank -- stationary sets in such an iteration would be considering the filter $\mathcal{F}$ generated by the stationary sets in the ascending chain we've built so far, and Laver or Mathias forcing relative to $\mathcal{F}$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Thank you!}
+However, these increase $\fehu(\kappa)$ and may not be sufficiently iterable with $< \kappa$ support. Possibly one could generalize some other poset for adding a new real -- such as Miller forcing -- or come up with an entirely new idea. Maybe I'm missing something obvious.
+
+Thanks for listening.
+\end{frame}
+
+\end{document}

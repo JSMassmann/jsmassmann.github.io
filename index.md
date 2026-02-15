@@ -15,7 +15,7 @@ I’m a proud member of the LGBTQ+ community. My Myers-Briggs personality type i
 
 I live in the UK and speak English fluently (C2), and I used to speak German natively since I was born in Germany.
 
-I use Arch Linux with `i3wm` (X11) as my daily operating system. I try not to be obnoxious about it, but it *is* better than Windows.
+I use Arch Linux with Wayland as my daily operating system. I try not to be obnoxious about it, but it *is* better than Windows.
 
 # Maths
 
@@ -33,7 +33,7 @@ Below are some small blogs or expositions I've put on my website:
 I've attended the following conferences:
 
 - European Set Theory Conference 2024
-- Set Theory in the UK 14 & 15
+- Set Theory in the UK 14, 15 & 17.
 
 ## My research interests
 
@@ -86,12 +86,17 @@ I have not published any sets of notes regarding courses or particular topics.
     In this talk I discuss my theorem that \(\Sigma_2\)-nonprojectility can be considered analogous to subtlety; formally, that a notion which many would agree encapsulates the strength of subtlety is in fact equivalent to \(\Sigma_2\)-nonprojectibility. I therefore focus on two polar opposites in the ordinals: countable ordinals and large cardinals. We consider analogies in the structure of these. Kranakis, Richter, Aczel, Klev, Rathjen & Kaufmann have in the past discussed countable analogues to large cardinals and the difficulty of formalizing such a general notion. As part of my case I share some previously known results on the structure of stable ordinals and an equivalence of subtle cardinals (a combinatorial principle) with a significant strengthening of indescribability.
   </div>
   </div>
+- "\(\mathcal{P}(\kappa)/\mathsf{NS}_\kappa\) and Stationary Reflection" (contributed talk, Set Theory in the UK 17)
+  - [PDF](slides/StatRef/Slides.pdf)
+  - [TEX](slides/StatRef/stuk17.tex)
 
 # Programming
 
-My favourite language is C, due to its simplicity and versatility. I used to use C++, but switched after realizing OOP is slow and provides no significant simplifications or improvements. For simple scripting, I like Python. I know a small amount of C#, Go and JavaScript.
+My favourite languages are C, due to its simplicity and versatility, and Rust, due to its conceptual elegance. I used to use C++, but switched after realizing OOP is slow and provides no significant simplifications or improvements. For simple scripting, I like Python. I know a small amount of C#, Go and JavaScript.
 
-For very low-level things, x64 assembly is my main tool, despite all of the architecture's flaws.
+For very low-level things, x64 is my main tool, despite all of the architecture's flaws.
+
+Play my lazily made [parody](lcas/index.html) of [List Animals Until Failure](https://rose.systems/animalist/)!
 
 # Tarballs
 
@@ -103,14 +108,3 @@ Below are `.tar.gz` archives, for projects containing multiple files and a lot o
 # Contact
 
 See [contact](contact.md).
-
-# Buttons
-
-<div align="center">
-<a href="https://www.fsf.org/">
-<img src="https://static.fsf.org/nosvn/associate/crm/6777766.png" alt = "Member of the Free Software Foundation since October 2024" width="180" height="45" border="0" align="middle" />
-</a>
-<a href="https://www.defectivebydesign.org/">
-<img src="https://www.defectivebydesign.org/sites/nodrm.civicactions.net/files/images/fsf_DBD_468x60.png" alt="Fight DRM, Join the Free Software Foundation" width="468" height="60" border="0" align="middle" />
-</a>
-</div>
