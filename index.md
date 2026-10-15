@@ -5,27 +5,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-# Hiii!
-
-I'm Jayde Massmann, a trans girl. I like maths, programming, Celeste, listening to music and cats. I also used to watch anime quite a lot. My pronouns are she/her.
-
-# Somewhat extraneous facts
-
-I’m a proud member of the LGBTQ+ community. My Myers-Briggs personality type is INTP-T.
-
-I live in the UK and speak English fluently (C2), and I used to speak German natively since I was born in Germany.
-
-I use Arch Linux with Wayland as my daily operating system. I try not to be obnoxious about it, but it *is* better than Windows.
+I'm Jayde Massmann, a trans girl. I like maths, programming, Celeste, listening to music and cats. My pronouns are she/her.
 
 # Maths
 
 My ORCID is 0009-0003-8458-4700.
 
-My Erdős number is `NaN`: the only person who I've formally collaborated with has only collaborated with me.
+My Erdős number is undefined: the only person who I've formally collaborated with has only collaborated with me.
 
 I'm the author of OEIS sequences A368423, A383237 and A385157.
 
-Below are some small blogs or expositions I've put on my website:
+Below are some small blogs or expositions of ideas I've put on my website:
 
 - [Binary WHILE](blog/BW.md).
 - [The SIMD XOR Bit Generator](blog/SXBG.md).
@@ -33,7 +23,7 @@ Below are some small blogs or expositions I've put on my website:
 I've attended the following conferences:
 
 - European Set Theory Conference 2024
-- Set Theory in the UK 14, 15 & 17.
+- Set Theory in the UK 14, 15, 17 & 18.
 
 ## My research interests
 
@@ -41,7 +31,7 @@ I like, in maths, proof theory, large cardinals, inner model theory, recursion t
 
 ## My preprints and notes
 
-I have so far published 2 preprints. I shall keep a repository of all my papers, as well as their LaTeX source code, on this website. I'm quite pedantic and consistent in spacing, etc. in LaTeX.
+I have so far published 2 preprints. I shall keep a repository of all my papers, as well as their LaTeX source code, on this website.
 
 - [Extending the Veblen Function](papers/DimVeb/Dimensional_Veblen.pdf) (with A. Kwon)
   - [TEX](papers/DimVeb/main.tex)
@@ -65,7 +55,7 @@ I have so far published 2 preprints. I shall keep a repository of all my papers,
   <div class="collapse" id="collapseAbstract2">
 
   <div class="card card-body">
-    We share both recent and older, well-known results regarding the notions of stable ordinals and shrewd cardinals. We then argue that nonprojectible ordinals may be considered as recursive analogues to subtle cardinals, a highly combinatorial type of cardinal related to Jensen's fine structure, due to the latter possessing a characterisation in terms of shrewdnesss.
+    We share both recent and older, well-known results regarding the notions of stable ordinals and shrewd cardinals. We then argue that \(\Sigma_2\)-nonprojectible ordinals may be considered as recursive analogues to subtle cardinals, a highly combinatorial type of cardinal related to Jensen's fine structure, due to the latter possessing a characterisation in terms of shrewdnesss.
   </div>
   </div>
 
@@ -92,18 +82,22 @@ I have not published any sets of notes regarding courses or particular topics.
 
 # Programming
 
-My favourite languages are C, due to its simplicity and versatility, and Rust, due to its conceptual elegance. I used to use C++, but switched after realizing OOP is slow and provides no significant simplifications or improvements. For simple scripting, I like Python. I know a small amount of C#, Go and JavaScript.
+My favourite languages are C, due to its simplicity and versatility, and Rust, due to its conceptual elegance. I used to use C++, but switched after growing disillusioned with OOP. For simple scripting, I like Python. I know a small amount of C#, Go and JavaScript.
 
-For very low-level things, x64 is my main tool, despite all of the architecture's flaws.
-
-Play my lazily made [parody](lcas/index.html) of [List Animals Until Failure](https://rose.systems/animalist/)!
+Play [my lazily made parody](lcas/index.html) of [List Animals Until Failure](https://rose.systems/animalist/)!
 
 # Tarballs
 
-Below are `.tar.gz` archives, for projects containing multiple files and a lot of data or code, created through `tar -zcvf`. I've also attached SHA-256 sums, to ensure you're not downloading a corrupt PDF.
+Below are `.tar.gz` archives, for projects containing multiple files and a lot of data or code, created through `tar -zcvf`. I've also attached SHA-256 sums, to ensure you're not downloading a corrupted PDF.
 
 - A tarball of the Dimensional Veblen PDF, bibliography and source code: [dimveb.tar.gz](tarballs/dimveb.tar.gz) ([sha256](sha256sums/dimveb.tar.gz.sha256)).
 - A tarball of the recursive analogues PDF, bibliography and source code: [recanalogue.tar.gz](tarballs/recanalogue.tar.gz) ([sha256](sha256sums/recanalogue.tar.gz.sha256)).
+
+# Somewhat extraneous facts
+
+I’m a proud member of the LGBTQ+ community.
+My Myers-Briggs personality type is INTP-T.
+I live in the UK and speak English fluently (C2), and I used to speak German natively since I was born in Germany.
 
 # Contact
 
